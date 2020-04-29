@@ -17,9 +17,9 @@
     "url": "git+https://github.com/aqualaguna/shopee-client.git"
   },
   "keywords": [
-    "orm",
-    "mysql",
-    "nodejs"
+    "api",
+    "shopee",
+    "open api"
   ],
   "author": "ricardo",
   "license": "ISC",

@@ -1,0 +1,275 @@
+import { OrderStatus } from "./GetOrderListResponse";
+import { PromotionType } from "../../item/response/get/GetPromotionInfoResponse";
+
+export interface Address {
+  /**
+   * This object contains detailed breakdown for the recipient address.
+   */
+  name: String,
+  /**
+   * This object contains detailed breakdown for the recipient address.
+   */
+  phone: String,
+  /**
+   * The town of the recipient's address. Whether there is a town will depend on the region and/or country.
+   */
+  town: String,
+  /**
+   * The district of the recipient's address. Whether there is a town will depend on the region and/or country.
+   */
+  district: String,
+  /**
+   * The city of the recipient's address. Whether there is a town will depend on the region and/or country.
+   */
+  city: String,
+  /**
+   * The state/province of the recipient's address. Whether there is a town will depend on the region and/or country.
+   */
+  state: String,
+  /**
+   * The two-digit code representing the country of the Recipient.
+   */
+  country: String,
+  /**
+   * Recipient's postal code.
+   */
+  zipcode: String,
+  /**
+   * The full address of the recipient, including country, state, even street, and etc.
+   */
+  full_address: String,
+
+}
+
+export interface OrderItem {
+  /**
+   * ID of item
+   */
+  item_id: Number,
+  /**
+   * Name of item
+   */
+  item_name: String,
+  /**
+   * A item SKU (stock keeping unit) is an identifier defined by a seller, sometimes called parent SKU. Item SKU can be assigned to an item in Shopee Listings.
+   */
+  item_sku: String,
+  /**
+   * ID of the variation that belongs to the same item.
+   */
+  variation_id: Number,
+  /**
+   * Name of the variation that belongs to the same item.
+   * A seller can offer variations of the same item. 
+   * For example, the seller could create a fixed-priced listing for a t-shirt design and offer the shirt in different colors and sizes.
+   * In this case, each color and size combination is a separate variation. Each variation can have a different quantity and price.
+   */
+  variation_name: String,
+  /**
+   * A variation SKU (stock keeping unit) is an identifier defined by a seller. It is only intended for the seller's use. Many sellers assign a SKU to an item of a specific type, size, and color, which are variations of one item in Shopee Listings.
+   */
+  variation_sku: String,
+  /**
+   * The number of identical items purchased at the same time by the same buyer from one listing/item.
+   */
+  variation_quantity_purchased: Number,
+  /**
+   * The original price of the item in the listing currency.
+   */
+  variation_original_price: Number,
+  /**
+   * The after-discount price of the item in the listing currency.
+   * If there is no discount, this value will be same as that of variation_original_price.
+   * In case of bundle deal item, this value will return 0 as by design bundle deal discount will not be breakdown to item/variation level.
+   * Due to technical restriction, the value will return the price before bundle deal if we don't configure it to 0.
+   * Please call GetEscrowDetails if you want to calculate item-level discounted price for bundle deal item.
+   */
+  variation_discounted_price: Number,
+  /**
+   * This value indicates whether buyer buy the order item in wholesale price.
+   */
+  is_wholesale: Boolean,
+  /**
+   * The weight of the item
+   */
+  weight: Number,
+  /**
+   * To indicate if this item belongs to an addon deal.
+   */
+  is_add_on_deal: Boolean,
+  /**
+   * To indicate if this item is main item or sub item. True means main item, false means sub item.
+   */
+  is_main_item: Boolean,
+  /**
+   * A unique ID to distinguish groups of items in Cart, and Order. (e.g. AddOnDeal)
+   */
+  add_on_deal_id: Number,
+  /**
+   * Available type：product_promotion, flash_sale, group_by, bundle_deal.
+   */
+  promotion_type: PromotionType,
+  /**
+   * The ID of the promotion.
+   */
+  promotion_id: Number,
+}
+
+export enum CancelReason {
+  OUT_OF_STOCK='OUT_OF_STOCK',
+  CUSTOMER_REQUEST='CUSTOMER_REQUEST',
+  UNDELIVERABLE_AREA='UNDELIVERABLE_AREA',
+  COD_NOT_SUPPORTED='COD_NOT_SUPPORTED',
+}
+
+export interface Order {
+  /**
+   * Shopee's unique identifier for an order.
+   */
+  ordersn: String,
+  /**
+   * The two-digit code representing the country where the order was made.
+   */
+  country: String,
+  /**
+   * The three-digit code representing the currency unit for which the order was paid.
+   */
+  currency: String,
+  /**
+   * This value indicates whether the order was a COD (cash on delivery) order.
+   */
+  cod: Boolean,
+  /**
+   * This value indicates whether the order was a COD (cash on delivery) order.
+   */
+  tracking_no: String,
+  /**
+   * Shipping preparation time set by the seller when listing item on Shopee.
+   */
+  days_to_ship: Number,
+  /**
+   * This object contains detailed breakdown for the recipient address.
+   */
+  recipient_address: Address,
+  /**
+   * The estimated shipping fee is an estimation calculated by Shopee based on specific logistics courier's standard.
+   */
+  estimated_shipping_fee: Number,
+  /**
+   * The actual shipping cost of the order if available from external logistics partners.
+   */
+  actual_shipping_cost: Number,
+  /**
+   * The total amount paid by the buyer for the order. This amount includes the total sale price of items, shipping cost beared by buyer; and offset by Shopee promotions if applicable. This value will only return after the buyer has completed payment for the order.
+   */
+  total_amount: Number,
+  /**
+   * The total amount that the seller is expected to receive for the order. This amount includes buyer paid order amount (total_amount), all forms of Shopee platform subsidy; and offset by any cost and commission incurred.
+   */
+  escrow_amount: Number,
+  /**
+   * Enumerated type that defines the current status of the order.
+   */
+  order_status: OrderStatus,
+  /**
+   * The logistics service provider that the buyer selected for the order to deliver items.
+   */
+  shipping_carrier: String,
+  /**
+   * The payment method that the buyer selected to pay for the order.
+   * Applicable values: See Data Definition- Payment Methods
+   */
+  payment_method: String,
+  /**
+   * Only work for cross-border order.This value indicates whether the order contains goods that are required to declare at customs. "T" means true and it will mark as "T" on the shipping label; "F" means false and it will mark as "P" on the shipping label. This value is accurate ONLY AFTER the order trackingNo is generated, please capture this value AFTER your retrieve the trackingNo.
+   */
+  goods_to_declare: Boolean,
+  /**
+   * Message to seller.
+   */
+  message_to_seller: String,
+  /**
+   * The note seller made for own reference.
+   */
+  note: String,
+  /**
+   * Update time for the note.
+   */
+  note_update_time: Number,
+  /**
+   * Timestamp that indicates the date and time that the order was created.
+   */
+  create_time: Number,
+  /**
+   * Timestamp that indicates the last time that there was a change in value of order, such as order status changed from 'Paid' to 'Completed'.
+   */
+  update_time: Number,
+  /**
+   * This object contains the detailed breakdown for the result of this API call.
+   */
+  items: OrderItem[],
+  /**
+   * The time when the order status is updated from UNPAID to PAID. This value is NULL when order is not paid yet.
+   */
+  pay_time: Number,
+  /**
+   * For Indonesia orders only. The name of the dropshipper.
+   */
+  dropshipper: String,
+  /**
+   * Last 4 digits of the credit card
+   */
+  credit_card_number: String,
+  /**
+   * The name of buyer
+   */
+  buyer_username: String,
+  /**
+   * The phone number of dropshipper
+   */
+  dropshipper_phone: String,
+  /**
+   * The deadline to ship out the parcel.
+   */
+  ship_by_date: Number,
+  /**
+   * To indicate whether this order is split to fullfil order(forder) level. Call GetForderInfo if it's "true".
+   */
+  is_split_up: Boolean,
+  /**
+   * Cancel reason from buyer.
+   */
+  buyer_cancel_reason: String,
+  /**
+   * Could be one of buyer, seller, system or Ops.
+   */
+  cancel_by: String,
+  /**
+   * The first-mile tracking number.
+   */
+  fm_tn: String,
+  /**
+   * Use this field to get reason for buyer, seller, and system cancellation.
+   */
+  cancel_reason: CancelReason,
+  /**
+   * Cross-border tax imposed by the Indonesian government on sellers.
+   */
+  escrow_tax: Number,
+}
+
+
+export default interface GetOrderDetailResponse {
+  /**
+   * The set of orders that match the ordersn or filter criteria specified.
+   */
+  orders: Order[],
+  /**
+   * Orders that encountered error
+   */
+  errors: String[],
+  /**
+   * The identifier for an API request for error tracking
+   */
+  request_id: String,
+}

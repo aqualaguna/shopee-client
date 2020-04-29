@@ -2,6 +2,8 @@
 
 this project started as my goal to use shopee api easily. this project has not fully tested yet. but basic functions still function perfectly.
 
+Wrote Using Typescript and Type Definition for request and response.
+Fully well documented and modulated.
 
 ## Usage
 ```

@@ -78,7 +78,7 @@ export default class CategoryModule extends BaseModule {
    * @param request 
    */
   updateCategory(request: Category): Promise<DeleteCategoryResponse> {
-    let full_url = this.client.defaults.baseURL + 'shop_category/update';
+    let full_url = this.client.defaults.baseURL + 'shop_categorys/update';
     let params: any = {
       partner_id: Number(this.config.partner_id),
       shopid: Number(this.config.shop_id),
@@ -86,7 +86,7 @@ export default class CategoryModule extends BaseModule {
       ...request
     }
     let hmac = hmac256(this.config.partner_key || '', full_url + '|' + JSON.stringify(params))
-    return this.client.post('shop_category/update' ,params, {
+    return this.client.post('shop_categorys/update' ,params, {
       headers: {
         Authorization: hmac
       }

@@ -127,7 +127,7 @@ export default class ItemModule extends BaseModule {
    * @param request 
    */
   getCategory(request: getCategoryRequest = {}) : Promise<GetCategoryReponse> {
-    let full_url = this.client.defaults.baseURL + 'categories/get';
+    let full_url = this.client.defaults.baseURL + 'item/categories/get';
     let params: any = {
       partner_id: Number(this.config.partner_id),
       shopid: Number(this.config.shop_id),
@@ -135,7 +135,7 @@ export default class ItemModule extends BaseModule {
       ...request
     }
     let hmac = hmac256(this.config.partner_key || '', full_url + '|' + JSON.stringify(params))
-    return this.client.post('categories/get' ,params, {
+    return this.client.post('item/categories/get' ,params, {
       headers: {
         Authorization: hmac
       }

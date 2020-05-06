@@ -85,7 +85,7 @@ export default class ShopeeClient {
         authUrl += isCancel ? "cancel_auth_partner" : "auth_partner";
         authUrl += `?id=${this.config.partner_id}`;
         authUrl += `&token=${token}`;
-        authUrl += `&redirect=${this.config.redirect_uri}`;
+        authUrl += `&redirect=${encodeURIComponent((this.config.redirect_uri || '') as string)}`;
         return authUrl;
       }
 

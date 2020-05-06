@@ -40,7 +40,7 @@ export default class ShopeeClient {
         this.validateConfig();
         this.client = axios.create({
             baseURL: this.config.is_uat ? 'https://partner.uat.shopeemobile.com/api/v1/':'https://partner.shopeemobile.com/api/v1/',
-            timeout: 1000,
+            timeout: 10000,
         });
 
         this.shop = new ShopModule(this.client, this.config);

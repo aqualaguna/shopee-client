@@ -227,7 +227,7 @@ export default class ItemModule extends BaseModule {
    * Use this call to get detail of item
    * @param request 
    */
-  getItemDetail(item_id: String) : Promise<getItemDetailResponse> {
+  getItemDetail(item_id: Number) : Promise<getItemDetailResponse> {
     let full_url = this.client.defaults.baseURL + 'item/get';
     let params: any = {
       partner_id: Number(this.config.partner_id),

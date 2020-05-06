@@ -19,7 +19,7 @@ export default class CategoryModule extends BaseModule {
    * Use this call to get list of in-shop categories.
    */
   getCategory(request: PaginationRequest): Promise<GetCategoryReponse> {
-    let full_url = this.client.defaults.baseURL + 'shop_category/get';
+    let full_url = this.client.defaults.baseURL + 'shop_categorys/get';
     let params: any = {
       partner_id: Number(this.config.partner_id),
       shopid: Number(this.config.shop_id),
@@ -27,7 +27,7 @@ export default class CategoryModule extends BaseModule {
       ...request
     }
     let hmac = hmac256(this.config.partner_key || '', full_url + '|' + JSON.stringify(params))
-    return this.client.post('shop_category/get' ,params, {
+    return this.client.post('shop_categorys/get' ,params, {
       headers: {
         Authorization: hmac
       }
@@ -78,7 +78,7 @@ export default class CategoryModule extends BaseModule {
    * @param request 
    */
   updateCategory(request: Category): Promise<DeleteCategoryResponse> {
-    let full_url = this.client.defaults.baseURL + 'shop_categorys/update';
+    let full_url = this.client.defaults.baseURL + 'shop_category/update';
     let params: any = {
       partner_id: Number(this.config.partner_id),
       shopid: Number(this.config.shop_id),
@@ -86,7 +86,7 @@ export default class CategoryModule extends BaseModule {
       ...request
     }
     let hmac = hmac256(this.config.partner_key || '', full_url + '|' + JSON.stringify(params))
-    return this.client.post('shop_categorys/update' ,params, {
+    return this.client.post('shop_category/update' ,params, {
       headers: {
         Authorization: hmac
       }

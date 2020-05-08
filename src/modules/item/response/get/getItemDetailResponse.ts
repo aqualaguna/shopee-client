@@ -19,8 +19,21 @@ export interface ItemDetail extends Item {
   inflated_original_price: Number,
 }
 
+export interface ItemDetail extends Item {
+  is_2tier_item: boolean,
+  days_to_ship: number,
+  update_time: number,
+  create_time: number,
+  likes: number,
+  views: number,
+  sales: number,
+  rating_star: number,
+  item_id: number,
+  size_chart: string,
+}
+
 export default interface getItemDetailResponse {
-  item: Item,
+  item: ItemDetail,
   /**
    * Warning returned when the category or attributes are missing/invalid.
    */

@@ -13,7 +13,7 @@ export interface TierVariation {
   /**
    * Tier variation images. Can only be applied for the first level options. Urls sequence match the options sequence and urls number cannot exceed options number.
    */
-  images_url?: String,
+  images_url?: String[],
 }
 
 export interface TierVariation2 {

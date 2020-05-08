@@ -147,7 +147,7 @@ export default class ItemModule extends BaseModule {
    * @param request 
    */
   getAttributes(request: GetAttributeRequest) : Promise<GetAttributeResponse> {
-    let full_url = this.client.defaults.baseURL + 'attributes/get';
+    let full_url = this.client.defaults.baseURL + 'item/attributes/get';
     let params: any = {
       partner_id: Number(this.config.partner_id),
       shopid: Number(this.config.shop_id),
@@ -155,7 +155,7 @@ export default class ItemModule extends BaseModule {
       ...request
     }
     let hmac = hmac256(this.config.partner_key || '', full_url + '|' + JSON.stringify(params))
-    return this.client.post('attributes/get' ,params, {
+    return this.client.post('item/attributes/get' ,params, {
       headers: {
         Authorization: hmac
       }

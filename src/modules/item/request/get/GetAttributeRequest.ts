@@ -18,5 +18,5 @@ export default interface GetAttributeRequest {
   /**
    * Shopee's unique identifier for a shop. Should be provided if no "country" and "is_cb".
    */
-  shopid: Number
+  shopid?: Number
 }

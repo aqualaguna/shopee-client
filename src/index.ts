@@ -70,7 +70,7 @@ export default class ShopeeClient {
         }
     }
 
-    get baseUrl() : String {
+    baseUrl() : String {
         return this.client.defaults.baseURL || '';
     }
 
@@ -80,8 +80,7 @@ export default class ShopeeClient {
           // @ts-ignore
           .update(this.config.partner_key + (this.config.redirect_uri || ''))
           .digest("hex");
-    
-        let authUrl = `${this.baseUrl}shop/`;
+        let authUrl = `${this.baseUrl()}shop/`;
         authUrl += isCancel ? "cancel_auth_partner" : "auth_partner";
         authUrl += `?id=${this.config.partner_id}`;
         authUrl += `&token=${token}`;

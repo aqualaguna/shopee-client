@@ -9,12 +9,12 @@ beforeAll((done) => {
 describe('Client Config Test', () => {
   test('correct Config', () => {
     let client = new ShopeeClient(prodConfig);
-    expect(client.baseUrl).toEqual("https://partner.shopeemobile.com/api/v1/");
+    expect(client.baseUrl()).toEqual("https://partner.shopeemobile.com/api/v1/");
   });
 
   test('test Config', () => {
     let client = new ShopeeClient(testConfig);
-    expect(client.baseUrl).toEqual("https://partner.uat.shopeemobile.com/api/v1/");
+    expect(client.baseUrl()).toEqual("https://partner.uat.shopeemobile.com/api/v1/");
   });
 
   test('incorrect Config', () => {
@@ -26,11 +26,11 @@ describe('Client Config Test', () => {
     }
   });
   test('authorize Shop', () => {
-    let client = new ShopeeClient(prodConfig);
+    let client = new ShopeeClient(testConfig);
     let url = client.buildAuthURL(true);
-    expect(url).toEqual('https://partner.shopeemobile.com/api/v1/shop/cancel_auth_partner?id=845386&token=18e28321f4210c4b89ed166a40fdeb86019fc550b0925237d4ae2e83112426ac&redirect=localhost:3000/redirect')
+    expect(url).toEqual('https://partner.uat.shopeemobile.com/api/v1/shop/cancel_auth_partner?id=842701&token=a3a159a6a77df1c82c1943ecb18fa38bdd8f36a655361b4eae3d21a33cbb8531&redirect=https%3A%2F%2Fwww.google.com')
     url = client.buildAuthURL();
-    expect(url).toEqual('https://partner.shopeemobile.com/api/v1/shop/auth_partner?id=845386&token=18e28321f4210c4b89ed166a40fdeb86019fc550b0925237d4ae2e83112426ac&redirect=localhost:3000/redirect')
+    expect(url).toEqual('https://partner.uat.shopeemobile.com/api/v1/shop/auth_partner?id=842701&token=a3a159a6a77df1c82c1943ecb18fa38bdd8f36a655361b4eae3d21a33cbb8531&redirect=https%3A%2F%2Fwww.google.com')
   });
   
 })

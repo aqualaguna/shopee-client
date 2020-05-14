@@ -152,7 +152,7 @@ export default class OrderModule extends BaseModule {
    * @param ordersn Shopee's unique identifier for an order.
    */
   getForderInfo(ordersn: String): Promise<GetForderInfoResponse> {
-    let full_url = this.client.defaults.baseURL + 'orders/forders/get';
+    let full_url = this.client.defaults.baseURL + 'orders/forder/get';
     let params: any = {
       ordersn,
       partner_id: Number(this.config.partner_id),
@@ -160,7 +160,7 @@ export default class OrderModule extends BaseModule {
       timestamp: Math.round(Date.now() / 1000),
     }
     let hmac = hmac256(this.config.partner_key || '', full_url + '|' + JSON.stringify(params))
-    return this.client.post('orders/forders/get' ,params, {
+    return this.client.post('orders/forder/get' ,params, {
       headers: {
         Authorization: hmac
       }

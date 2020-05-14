@@ -14,7 +14,7 @@ export interface ItemPriceModified {
   /**
    * Specify the revised price of the item.
    */
-  inflated_price: Number
+  inflated_price: number
 
 }
 export default interface UpdatePriceResponse {

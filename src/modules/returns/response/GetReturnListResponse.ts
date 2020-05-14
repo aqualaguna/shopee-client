@@ -62,7 +62,7 @@ export interface ReturnItem {
   /**
    * A unique ID to distinguish groups of items in Cart, and Order. (e.g. AddOnDeal)
    */
-  add_on_deal_id: Number
+  add_on_deal_id: number
 }
 
 export interface Return {

@@ -43,7 +43,7 @@ export interface DiscountDetailItem extends DiscountItem{
   /**
    * Use this field to indicate the after-tax promotion price.
    */
-  item_inflated_promotion_price: Number
+  item_inflated_promotion_price: number
 
 }
 

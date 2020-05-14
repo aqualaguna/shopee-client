@@ -105,5 +105,5 @@ export default interface GetShopResponse {
   /**
    * Use this field to indicate the expiration date for shop authorization.
    */
-  expire_time: Number
+  expire_time: number
 }

@@ -32,7 +32,7 @@ export interface Threshold {
   /**
    * Your actual performance index.
    */
-  my: Number
+  my: number
 }
 export default interface PerformanceResponse {
   /**

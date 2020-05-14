@@ -57,7 +57,7 @@ export interface Logistic {
     /**
      * The min weight for an item on this logistic channel. If the value is 0 or null, that means there is no limit.
      */
-    item_min_weight: Number
+    item_min_weight: number
   },
   /**
    * The dimension limit for this logistic channel.

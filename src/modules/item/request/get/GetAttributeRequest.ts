@@ -15,8 +15,4 @@ export default interface GetAttributeRequest {
    * Is cross-border or not. Should be provided if no "shopid".
    */
   is_cb?: Boolean, 
-  /**
-   * Shopee's unique identifier for a shop. Should be provided if no "country" and "is_cb".
-   */
-  shopid: Number
 }

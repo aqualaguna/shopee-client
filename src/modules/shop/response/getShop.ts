@@ -41,7 +41,7 @@ export default interface GetShopResponse {
   /**
    * Shopee's unique identifier for a shop.
    */
-  shop_id: Number,
+  shop_id: number,
   /**
    * Name of the shop.
    */
@@ -73,7 +73,7 @@ export default interface GetShopResponse {
   /**
    * Listing limitation of items for the shop.
    */
-  item_limit: Number,
+  item_limit: number,
   /**
    * The identifier for an API request for error tracking
    */
@@ -85,7 +85,7 @@ export default interface GetShopResponse {
   /**
    * Only for TW seller. The status of whether shop support installment: 1 means true and 0 means false
    */
-  installment_status: Number,
+  installment_status: number,
   /**
    * SIP affiliate shops info list
    */
@@ -97,11 +97,11 @@ export default interface GetShopResponse {
   /**
    * The days-to-ship value for non-pre orders.
    */
-  non_pre_order_dts: Number,
+  non_pre_order_dts: number,
   /**
    * The timestamp when the shop was authorized to the partner.
    */
-  auth_time: Number,
+  auth_time: number,
   /**
    * Use this field to indicate the expiration date for shop authorization.
    */

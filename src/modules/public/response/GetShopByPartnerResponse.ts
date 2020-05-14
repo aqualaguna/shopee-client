@@ -8,11 +8,11 @@ export interface Authed {
   /**
    * Shopee's unique identifier for a shop.
    */
-  shopid: Number,
+  shopid: number,
   /**
    * The timestamp when the shop was authorized to the partner.
    */
-  auth_time: Number,
+  auth_time: number,
   /**
    * SIP affiliate shops info list
    */
@@ -20,7 +20,7 @@ export interface Authed {
   /**
    * Use this field to indicate the expiration date for shop authorization.
    */
-  expire_time: Number,
+  expire_time: number,
 }
 
 export default interface GetShopByPartnerResponse {

@@ -6,7 +6,7 @@ export default interface AddTopPickRequest {
   /**
    * the list of item id. Allow 4 to 8 items in one collection.
    */
-  item_ids: Number[],
+  item_ids: number[],
   /**
    * True or False
    */

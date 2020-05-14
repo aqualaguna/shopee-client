@@ -62,7 +62,7 @@ export default class LogisticModule extends BaseModule {
    * @param ordersn The order serial numbers.
    * @param address_id The identify of address.
    */
-  getTimeSlot(ordersn: Number, address_id: Number): Promise<GetAddressResponse> {
+  getTimeSlot(ordersn: number, address_id: Number): Promise<GetAddressResponse> {
     let full_url = this.client.defaults.baseURL + 'logistics/timeslot/get';
     let params: any = {
       ordersn,
@@ -249,7 +249,7 @@ export default class LogisticModule extends BaseModule {
    * Dedicated for crossborder SLS order airwaybill. May not be applicable for local channel airwaybill.
    * @param ordersn  The order serial numbers.
    */
-  getOrderLogistic(ordersn: Number, forder_id?: string): Promise<GetOrderLogisticResponse> {
+  getOrderLogistic(ordersn: number, forder_id?: string): Promise<GetOrderLogisticResponse> {
     let full_url = this.client.defaults.baseURL + 'logistics/order/get';
     let params: any = {
       ordersn,
@@ -275,7 +275,7 @@ export default class LogisticModule extends BaseModule {
    * @param prefered Whether to make this logistic channel preferred. Indonestia logistics channel are not applicable.
    * @param cod Whether to enable COD for this logistic channel. Only COD supported channels are applicable.
    */
-  updateShopLogistic(logistic_id: Number, enabled?: boolean, prefered?: boolean, cod?: boolean): Promise<UpdateLogisticResponse> {
+  updateShopLogistic(logistic_id: number, enabled?: boolean, prefered?: boolean, cod?: boolean): Promise<UpdateLogisticResponse> {
     let full_url = this.client.defaults.baseURL + 'logistics/channel/update';
     let params: any = {
       partner_id: Number(this.config.partner_id),

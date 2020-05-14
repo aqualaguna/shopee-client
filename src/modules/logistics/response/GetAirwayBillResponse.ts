@@ -31,7 +31,7 @@ export default interface GetAirwayBillResponse {
     /**
      * The number of ordersn to get airway bills in this call.
      */
-    total_count: Number,
+    total_count: number,
     /**
      * This Object contains the airway bill to each order.
      */
@@ -48,7 +48,7 @@ export default interface GetAirwayBillResponse {
     /**
      * The number of orderSN to get airway bills in this call.
      */
-    total_count: Number,
+    total_count: number,
     /**
      * The list contains urls of retrieving airway bill in PDF format. Each url contains the airway bills which is in the same logistics channel.
      */

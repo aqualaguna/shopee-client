@@ -7,30 +7,30 @@ export default interface SetPushConfigRequest {
     /**
      * 0 stands for off and 1 stands for on.
      */
-    order_status: Number,
+    order_status: number,
     /**
      * 0 stands for off and 1 stands for on.
      */
-    order_tracking_number: Number,
+    order_tracking_number: number,
     /**
      * 0 stands for off and 1 stands for on.
      */
-    shop_update: Number,
+    shop_update: number,
     /**
      * 0 stands for off and 1 stands for on.
      */
-    banned_item: Number,
+    banned_item: number,
     /**
      * 0 stands for off and 1 stands for on.
      */
-    item_promotion: Number,
+    item_promotion: number,
     /**
      * 0 stands for off and 1 stands for on.
      */
-    reserved_stock_change: Number,
+    reserved_stock_change: number,
   },
   /**
    * Use this filed to set shops that need to be blocked.
    */
-  block_shopid: Number,
+  block_shopid: number,
 }

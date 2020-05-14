@@ -3,7 +3,7 @@ export interface CategoryItem {
   /**
    * The Identify of the parent of the category
    */
-  parent_id: Number,
+  parent_id: number,
   /**
    * This is to indicate whether the category has children.
    */
@@ -11,7 +11,7 @@ export interface CategoryItem {
   /**
    * The Identify of each category
    */
-  category_id: Number,
+  category_id: number,
   /**
    * The name of each category
    */

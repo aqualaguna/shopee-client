@@ -28,7 +28,7 @@ export interface Threshold {
   /**
    * Your target performance index.
    */
-  target: Number,
+  target: number,
   /**
    * Your actual performance index.
    */

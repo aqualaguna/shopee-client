@@ -348,7 +348,7 @@ export default class ItemModule extends BaseModule {
    * Use this call to update item price
    * @param request 
    */
-  updatePrice(item_id: Number, price: Number) : Promise<UpdatePriceResponse> {
+  updatePrice(item_id: number, price: Number) : Promise<UpdatePriceResponse> {
     let full_url = this.client.defaults.baseURL + 'items/update_price';
     let params: any = {
       item_id,
@@ -369,7 +369,7 @@ export default class ItemModule extends BaseModule {
    * Use this call to update item stock
    * @param request 
    */
-  updateStock(item_id: Number, stock: Number) : Promise<UpdateStockResponse> {
+  updateStock(item_id: number, stock: Number) : Promise<UpdateStockResponse> {
     let full_url = this.client.defaults.baseURL + 'items/update_stock';
     let params: any = {
       item_id,
@@ -613,7 +613,7 @@ export default class ItemModule extends BaseModule {
    * Use this api to boost multiple items at once.
    * @param request 
    */
-  boostItem(item_id: Number[] ) : Promise<BoostResponse> {
+  boostItem(item_id: number[] ) : Promise<BoostResponse> {
     let full_url = this.client.defaults.baseURL + 'items/boost';
     let params: any = {
       item_id,

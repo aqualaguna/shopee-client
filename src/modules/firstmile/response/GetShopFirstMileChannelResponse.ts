@@ -3,7 +3,7 @@ export interface GetShopLogistic {
   /**
    * The identity of logistic channel.
    */
-  logistic_id: Number,
+  logistic_id: number,
   /**
    * The name of logistic.
    */

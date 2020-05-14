@@ -4,19 +4,19 @@ export interface ItemDetail extends Item {
   /**
    * Only for TW seller. List of installments
    */
-  tenures: Number[],
+  tenures: number[],
   /**
    * Use this field to get Wthe locked stock of item by promotions.
    */
-  reserved_stock: Number,
+  reserved_stock: number,
   /**
    * Use this field to indicate the after-tax price.
    */
-  inflated_price: Number,
+  inflated_price: number,
   /**
    * Use this field to indicate the after-tax original price.
    */
-  inflated_original_price: Number,
+  inflated_original_price: number,
 }
 
 export interface ItemDetail extends Item {

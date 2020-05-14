@@ -6,5 +6,5 @@ export default interface CancelOrderResponse {
   /**
    * The time when the order is updated.
    */
-  modified_time: Number,
+  modified_time: number,
 }

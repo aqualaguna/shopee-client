@@ -2,7 +2,7 @@ export default interface InsertItemImgRequest {
   /**
    * The identity of product item.
    */
-  item_id: Number,
+  item_id: number,
   /**
    * Image URL of the item.
    */

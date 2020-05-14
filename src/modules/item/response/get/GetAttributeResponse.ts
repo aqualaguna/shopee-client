@@ -17,7 +17,7 @@ export interface AttributeItem {
   /**
    * The Identify of each category
    */
-  attribute_id: Number,
+  attribute_id: number,
   /**
    * The name of each attribute
    */

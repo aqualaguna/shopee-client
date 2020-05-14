@@ -16,31 +16,31 @@ export interface Promotion {
   /**
    * The ID of promotion.
    */
-  promotion_id: Number,
+  promotion_id: number,
   /**
    * ID of the variation that belongs to the same item.
    */
-  variation_id: Number,
+  variation_id: number,
   /**
    * Start timestamp of promotion.
    */
-  start_time: Number,
+  start_time: number,
   /**
    * End timestamp of promotion.
    */
-  end_time: Number,
+  end_time: number,
   /**
    * The promotion price of item.
    */
-  promotion_price: Number,
+  promotion_price: number,
   /**
    * The Locked stock of item by promotion.
    */
-  reserved_stock: Number,
+  reserved_stock: number,
   /**
    * The sold out timestamp of promotion stock.
    */
-  stockout_time: Number,
+  stockout_time: number,
   /**
    * The stage at which the promotion goes. Available values: ongoing/upcoming.
    */
@@ -52,7 +52,7 @@ export interface PromotionError {
   /**
    * Shopee's unique identifier for an item. Please input the item_id of an item to be changed.
    */
-  item_id: Number,
+  item_id: number,
   /**
    * Error Message.
    */
@@ -63,7 +63,7 @@ export interface PromotionItem {
   /**
    * Shopee's unique identifier for an item. Please input the item_id of an item to be changed.
    */
-  item_id: Number,
+  item_id: number,
   /**
    * Promotion information list.
    */

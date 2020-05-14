@@ -30,11 +30,11 @@ export interface ReturnItem {
   /**
    * Item id.
    */
-  item_id: Number,
+  item_id: number,
   /**
    * Shopee's unique identifier for a variation of an item.
    */
-  variation_id: Number,
+  variation_id: number,
   /**
    * Name of item in local language.
    */
@@ -46,11 +46,11 @@ export interface ReturnItem {
   /**
    * Amount of this item.
    */
-  amount: Number,
+  amount: number,
   /**
    * The price of Item.
    */
-  item_price: Number,
+  item_price: number,
   /**
    * To indicate if this item belongs to an addon deal.
    */
@@ -81,11 +81,11 @@ export interface Return {
   /**
    * The serial number of return.
    */
-  returnsn: Number,
+  returnsn: number,
   /**
    * Amount of the refund.
    */
-  refund_amount: Number,
+  refund_amount: number,
   /**
    * Currency of the return.
    */
@@ -93,11 +93,11 @@ export interface Return {
   /**
    * The time of return create.
    */
-  create_time: Number,
+  create_time: number,
   /**
    * The time of return modified.
    */
-  update_time: Number,
+  update_time: number,
   /**
    * Enumerated type that defines the current status of the return. Applicable values: See Data Definition- ReturnStatus.
    */
@@ -105,7 +105,7 @@ export interface Return {
   /**
    * The last time seller deal with this return.
    */
-  due_date: Number,
+  due_date: number,
   /**
    * The tracking number assigned by the shipping carrier for item shipment.
    */
@@ -125,7 +125,7 @@ export interface Return {
   /**
    * Order price before discount.
    */
-  amount_before_discount: Number,
+  amount_before_discount: number,
 
   user: {
     /**

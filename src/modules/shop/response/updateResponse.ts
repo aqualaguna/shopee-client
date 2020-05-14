@@ -2,7 +2,7 @@ export default interface UpdateResponse {
   /**
    * ID of the shop.
    */
-  shopid?: Number,
+  shopid?: number,
   /**
    * Name of the shop.
    */

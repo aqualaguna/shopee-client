@@ -7,11 +7,11 @@ export interface VariantItem {
   /**
    * The current stock quantity of the variation in the listing currency.
    */
-  stock: Number,
+  stock: number,
   /**
    * The current price of the variation in the listing currency.
    */
-  price: Number,
+  price: number,
   /**
    * A variation SKU (stock keeping unit) is an identifier defined by a seller. It is only intended for the seller's use. Many sellers assign a SKU to an item of a specific type, size, and color, which are variations of one item in Shopee Listings.
    */

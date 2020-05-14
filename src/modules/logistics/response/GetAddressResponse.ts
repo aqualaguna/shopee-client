@@ -1,7 +1,7 @@
 import { BaseAddress } from "./GetLogisticInfoResponse";
 
 export interface AddressResponse extends BaseAddress {
-  address_flag: String[]
+  address_flag: string[]
 }
 
 export default interface GetAddressResponse {
@@ -12,5 +12,5 @@ export default interface GetAddressResponse {
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
 }

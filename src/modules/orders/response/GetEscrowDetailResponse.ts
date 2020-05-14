@@ -4,7 +4,7 @@ export interface Income {
   /**
    * The three-digit code representing the currency unit used for all transactional amount under
    */
-  local_currency: String,
+  local_currency: string,
   /**
    * The total amount paid by the buyer for the order. This amount includes the total sale price of items, shipping cost beared by buyer; and offset by Shopee promotions if applicable.
    */
@@ -40,11 +40,11 @@ export interface Income {
   /**
    * The voucher code or promotion code the buyer used.
    */
-  voucher_code: String,
+  voucher_code: string,
   /**
    * The voucher name or promotion name the buyer used.
    */
-  voucher_name: String,
+  voucher_name: string,
   /**
    * The total amount that the seller is expected to receive for the order and will change before order completed.
    * escrow_amount=total_amount+voucher+credit_card_promotion+seller_rebate+coin-commission_fee-credit_card_transaction_fee-cross_border_tax-service_fee-buyer_shopee_kredit-seller_coin_cash_back+final_shipping_fee-seller_return_refund_amount.
@@ -86,11 +86,11 @@ export interface Income {
   /**
    * True means incoming won't change any more.
    */
-  is_completed: Boolean,
+  is_completed: boolean,
   /**
    * Use this field to fetch the list of voucher codes.
    */
-  voucher_code_list: String[],
+  voucher_code_list: string[],
   /**
    * The transaction_fee of seller.
    */
@@ -106,15 +106,15 @@ export interface BankAccount {
   /**
    * Name of the seller's receiving bank
    */
-  bank_name: String,
+  bank_name: string,
   /**
    * Account number of the seller's receiving bank
    */
-  bank_account_number: String,
+  bank_account_number: string,
   /**
    * The two-digit code representing country of the seller's receiving bank account
    */
-  bank_account_country: String,
+  bank_account_country: string,
 }
 
 export interface EscrowOrderItem {
@@ -125,11 +125,11 @@ export interface EscrowOrderItem {
   /**
    * Name of item
    */
-  item_name: String,
+  item_name: string,
   /**
    * A item SKU (stock keeping unit) is an identifier defined by a seller, sometimes called parent SKU. Item SKU can be assigned to an item in Shopee Listings.
    */
-  item_sku: String,
+  item_sku: string,
   /**
    * ID of the variation that belongs to the same item.
    */
@@ -137,11 +137,11 @@ export interface EscrowOrderItem {
   /**
    * Name of the variation that belongs to the same item. A seller can offer variations of the same item. For example, the seller could create a fixed-priced listing for a t-shirt design and offer the shirt in different colors and sizes. In this case, each color and size combination is a separate variation. Each variation can have a different quantity and price.
    */
-  variation_name: String,
+  variation_name: string,
   /**
    * A variation SKU (stock keeping unit) is an identifier defined by a seller. It is only intended for the seller's use. Many sellers assign a SKU to an item of a specific type, size, and color, which are variations of one item in Shopee Listings.
    */
-  variation_sku: String,
+  variation_sku: string,
   /**
    * This value indicates the number of identical items purchased at the same time by the same buyer from one listing/item.
    */
@@ -204,11 +204,11 @@ export interface EscrowOrderItem {
   /**
    * To indicate if this item belongs to an addon deal.
    */
-  is_add_on_deal: Boolean,
+  is_add_on_deal: boolean,
   /**
    * To indicate if this item is main item or sub item. True means main item, false means sub item.
    */
-  is_main_item: Boolean,
+  is_main_item: boolean,
   /**
    * A unique ID to distinguish groups of items in Cart, and Order. (e.g. AddOnDeal)
    */
@@ -245,7 +245,7 @@ export interface Activity {
   /**
    * Type of activity. Currently only one type: bundle_deal
    */
-  activity_type: String,
+  activity_type: string,
   /**
    * The original TOTAL price of ALL items in one activity(e.g. bundle deal. Define by activity_id) in the listing currency.
    */
@@ -264,11 +264,11 @@ export interface EscrowOrder {
   /**
    * My Income infomation
    */
-  ordersn: String,
+  ordersn: string,
   /**
    * The two-digit code representing the country where the order was made.
    */
-  country: String,
+  country: string,
   /**
    * This object contains detailed income breakdown for the order.
    */
@@ -276,19 +276,19 @@ export interface EscrowOrder {
   /**
    * The logistics service provider that the buyer selected for the order to deliver items.
    */
-  shipping_carrier: String,
+  shipping_carrier: string,
   /**
    * The three-digit code representing the currency unit of total order amount (escorw_amount) at the point of payment to the seller.
    */
-  escrow_currency: String,
+  escrow_currency: string,
   /**
    * The exchange rate used by Shopee to convert local_currency to escrow_currency.
    */
-  exchange_rate: String|Number,
+  exchange_rate: string|Number,
   /**
    * The payment channel that the seller selected to receive escrow for the order.
    */
-  escrow_channel: String,
+  escrow_channel: string,
   /**
    * The unique identifier for a payee by the 3rd party payment service provider selected in escrow_channel.
    */
@@ -319,5 +319,5 @@ export default interface GetEscrowDetailResponse {
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
 }

@@ -71,7 +71,7 @@ export default class OrderModule extends BaseModule {
    * Use this call to retrieve detailed information about one or more orders based on OrderSN.
    * @param ordersn_list The set of ordersn. You can specify up to 50 ordersns in this call. 
    */
-  getOrderDetail(ordersn_list: String[]): Promise<GetOrderDetailResponse> {
+  getOrderDetail(ordersn_list: string[]): Promise<GetOrderDetailResponse> {
     let full_url = this.client.defaults.baseURL + 'orders/detail';
     let params: any = {
       ordersn_list,
@@ -91,7 +91,7 @@ export default class OrderModule extends BaseModule {
    * Use this call to retrieve detailed escrow information about one order based on OrderSN.
    * @param ordersn Shopee's unique identifier for an order.
    */
-  getEscrowDetail(ordersn: String): Promise<GetEscrowDetailResponse> {
+  getEscrowDetail(ordersn: string): Promise<GetEscrowDetailResponse> {
     let full_url = this.client.defaults.baseURL + 'orders/my_income';
     let params: any = {
       ordersn,
@@ -111,7 +111,7 @@ export default class OrderModule extends BaseModule {
    * Use this call to accept buyer cancellation
    * @param ordersn Shopee's unique identifier for an order.
    */
-  acceptBuyerCancel(ordersn: String): Promise<AccceptBuyerCancelResponse> {
+  acceptBuyerCancel(ordersn: string): Promise<AccceptBuyerCancelResponse> {
     let full_url = this.client.defaults.baseURL + 'orders/buyer_cancellation/accept';
     let params: any = {
       ordersn,
@@ -131,7 +131,7 @@ export default class OrderModule extends BaseModule {
    * Use this call to reject buyer cancellation
    * @param ordersn Shopee's unique identifier for an order.
    */
-  rejectBuyerCancel(ordersn: String): Promise<RejectBuyerCancelResponse> {
+  rejectBuyerCancel(ordersn: string): Promise<RejectBuyerCancelResponse> {
     let full_url = this.client.defaults.baseURL + 'orders/buyer_cancellation/reject';
     let params: any = {
       ordersn,
@@ -151,7 +151,7 @@ export default class OrderModule extends BaseModule {
    * Use this call to retrieve detailed information of all the fulfill orders(forder) under a single regular order based on ordersn.
    * @param ordersn Shopee's unique identifier for an order.
    */
-  getForderInfo(ordersn: String): Promise<GetForderInfoResponse> {
+  getForderInfo(ordersn: string): Promise<GetForderInfoResponse> {
     let full_url = this.client.defaults.baseURL + 'orders/forder/get';
     let params: any = {
       ordersn,
@@ -171,7 +171,7 @@ export default class OrderModule extends BaseModule {
    * Use this API to cancel split order from the seller side.
    * @param ordersn Shopee's unique identifier for an order.
    */
-  undoSplitOrder(ordersn: String): Promise<UndoSplitResponse> {
+  undoSplitOrder(ordersn: string): Promise<UndoSplitResponse> {
     let full_url = this.client.defaults.baseURL + 'orders/unsplit';
     let params: any = {
       ordersn,
@@ -192,7 +192,7 @@ export default class OrderModule extends BaseModule {
    * @param ordersn Shopee's unique identifier for an order.
    * @param note The note seller made for own reference.
    */
-  addOrderNote(ordersn: String, note: String): Promise<GetEscrowDetailResponse> {
+  addOrderNote(ordersn: string, note: string): Promise<GetEscrowDetailResponse> {
     let full_url = this.client.defaults.baseURL + 'orders/note/add';
     let params: any = {
       ordersn,
@@ -213,7 +213,7 @@ export default class OrderModule extends BaseModule {
    * Use this API to fetch the accounting detail of order.
    * @param ordersn Shopee's unique identifier for an order.
    */
-  getIncome(ordersn: String): Promise<MyIncomeResponse> {
+  getIncome(ordersn: string): Promise<MyIncomeResponse> {
     let full_url = this.client.defaults.baseURL + 'orders/income';
     let params: any = {
       ordersn,

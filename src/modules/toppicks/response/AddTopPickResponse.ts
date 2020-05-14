@@ -8,11 +8,11 @@ export default interface AddTopPickResponse {
   /**
    * Whether it is activated or not.
    */
-  is_activated: Boolean,
+  is_activated: boolean,
   /**
    * Collection name
    */
-  name: String,
+  name: string,
   /**
    * Item list of the collection
    */

@@ -47,7 +47,7 @@ export interface TrackingInfo {
   /**
    * The order logistics tracking info.
    */
-  description: String,
+  description: string,
   /**
    * The 3PL logistics status for the order. Applicable values: See Data Definition - TrackingLogisticsStatus.
    */
@@ -58,7 +58,7 @@ export default interface GetLogisticMessageResponse {
   /**
    * The tracking number assigned by the shipping carrier for item shipment.
    */
-  tracking_number: String,
+  tracking_number: string,
   tracking_info: TrackingInfo[],
   /**
    * The Shopee logistics status for the order. Applicable values: See Data Definition- LogisticsStatus.
@@ -67,13 +67,13 @@ export default interface GetLogisticMessageResponse {
   /**
    * The identifier of the API request for error tracking
    */
-  request_id: String,
+  request_id: string,
   /**
    * The order serial numbers.
    */
-  order_sn: String,
+  order_sn: string,
   /**
    * Shopee's unique identifier for a fulfillment order.
    */
-  forder_id: String,
+  forder_id: string,
 }

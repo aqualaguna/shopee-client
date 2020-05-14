@@ -2,7 +2,7 @@ export default interface GetLogisticMessageRequest {
   /**
    * The order serial numbers.
    */
-  ordersn: String,
+  ordersn: string,
   /**
    * The tracking number assigned by the shipping carrier for item shipment. If there are more than one tracking number in one order, this param is necessary.
    */
@@ -10,5 +10,5 @@ export default interface GetLogisticMessageRequest {
   /**
    * Shopee's unique identifier for a fulfillment order.
    */
-  forder_id?: String,
+  forder_id?: string,
 }

@@ -2,7 +2,7 @@ export default interface AddTopPickRequest {
   /**
    * Collection name. 1 to 24 characters.
    */
-  name: String,
+  name: string,
   /**
    * the list of item id. Allow 4 to 8 items in one collection.
    */
@@ -10,6 +10,6 @@ export default interface AddTopPickRequest {
   /**
    * True or False
    */
-  is_activated: Boolean,
+  is_activated: boolean,
 
 }

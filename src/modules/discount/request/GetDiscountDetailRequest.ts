@@ -4,5 +4,5 @@ export default interface GetDiscountDetailRequest extends PaginationRequest {
   /**
    * Shopee's unique identifier for a discount activity.
    */
-  discount_id: Number,
+  discount_id: number,
 }

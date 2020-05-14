@@ -21,11 +21,11 @@ export interface CategoryItem {
   /**
    * The name of each category
    */
-  category_name: String,
+  category_name: string,
   /**
    * This is to indicate whether the category has children. Attributes can ONLY be fetched for the category_id WITHOUT children.
    */
-  has_children: Boolean,
+  has_children: boolean,
   /**
    * The limits of pre-order items' days_to_ship based on per category.
    */
@@ -37,6 +37,6 @@ export default interface getCategoryResponse {
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
 
 }

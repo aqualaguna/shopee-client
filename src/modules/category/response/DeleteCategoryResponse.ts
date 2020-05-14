@@ -2,13 +2,13 @@ export default interface DeleteCategoryResponse {
  /**
    * ShopCategory's unique identifier.
    */
-  shop_category_id: Number,
+  shop_category_id: number,
   /**
    * message from server
    */
-  msg: String,
+  msg: string,
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
 }

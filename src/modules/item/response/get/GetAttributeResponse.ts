@@ -21,12 +21,12 @@ export interface AttributeItem {
   /**
    * The name of each attribute
    */
-  attribute_name: String,
+  attribute_name: string,
   /**
    * This is to indicate whether this attribute is mandantory
    * sample: STRING_TYPE
    */
-  is_mandatory: Boolean,
+  is_mandatory: boolean,
   /**
    * Enumerated type that defines the type of the attribute. Applicable values: See Data Definition- AttributeType.
    */
@@ -49,11 +49,11 @@ export interface Value {
   /**
    * Value in original language. It's MANDATORY to use attributes in original_value to add items.
    */
-  original_value: String,
+  original_value: string,
   /**
    * Value in translated language. As referrence only, CANNOT be used to add item. If the selected language is not supported in certain shop location, this field will be empty.
    */
-  translate_value: String
+  translate_value: string
 
 }
 
@@ -62,5 +62,5 @@ export default interface GetAttributeResponse {
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
 }

@@ -4,7 +4,7 @@ export default interface CancelOrderRequest {
   /**
    * Shopee's unique identifier for an order.
    */
-  ordersn: String,
+  ordersn: string,
   /**
    * The reason seller want to cancel this order. Applicable values: OUT_OF_STOCK, CUSTOMER_REQUEST, UNDELIVERABLE_AREA, COD_NOT_SUPPORTED.
    */

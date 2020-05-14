@@ -4,7 +4,7 @@ export default interface SplitOrderRequest {
   /**
    * Shopee's unique identifier for an order.
    */
-  ordersn: String,
+  ordersn: string,
   /**
    * Item information contained in fulfilment orders.
    */

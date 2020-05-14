@@ -6,7 +6,7 @@ export default interface UpdateTopPickRequest {
   /**
    * Collection name. 1 to 24 characters.
    */
-  name: String,
+  name: string,
   /**
    * The list of item id. Existed item_ids will overridden by the new_item_ids.
    */
@@ -14,5 +14,5 @@ export default interface UpdateTopPickRequest {
   /**
    * True or False. If true, it will activate this collection and deactivate the original one.
    */
-  is_activated: Boolean
+  is_activated: boolean
 }

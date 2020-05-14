@@ -1,25 +1,25 @@
 
 export interface GetFMBatchError {
-  error_code: String,
+  error_code: string,
   /**
    * The detail information of this error.
    */
-  error_description: String,
+  error_description: string,
   /**
    * The first-mile tracking number.
    */
-  fm_tn: String
+  fm_tn: string
 }
 
 export interface SimpleFMTN {
   /**
    * The first-mile tracking number.
    */
-  fm_tn: String,
+  fm_tn: string,
   /**
    * The url of retrieving waybill.
    */
-  waybill: String
+  waybill: string
 }
 
 export default interface GetFMTrackingNoWaybillResponse {
@@ -30,7 +30,7 @@ export default interface GetFMTrackingNoWaybillResponse {
     /**
      * The list contains urls of retrieving waybill in PDF format. Each url contains the airway bills which is in the same logistics channel.
      */
-    waybills: String[],
+    waybills: string[],
     /**
      * The number of Tracking Number to get waybills in this call.
      */
@@ -60,5 +60,5 @@ export default interface GetFMTrackingNoWaybillResponse {
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
 }

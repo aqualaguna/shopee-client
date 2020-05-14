@@ -7,11 +7,11 @@ export interface GetShopLogistic {
   /**
    * The name of logistic.
    */
-  logistic_name: String,
+  logistic_name: string,
   /**
    * The shipment method for bound orders, should be pickup or dropoff.
    */
-  shipment_method: String,
+  shipment_method: string,
 }
 
 export default interface GetShopFirstMileChannelResponse {
@@ -19,5 +19,5 @@ export default interface GetShopFirstMileChannelResponse {
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
 }

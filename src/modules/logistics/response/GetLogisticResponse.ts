@@ -14,7 +14,7 @@ export interface Size {
   /**
    * The name of size.
    */
-  name: String,
+  name: string,
   /**
    * The pre-defined shipping fee for the specific size.
    */
@@ -29,15 +29,15 @@ export interface Logistic {
   /**
    * The name of logistic channel
    */
-  logistic_name: String,
+  logistic_name: string,
   /**
    * This is to indicate whether this logistic channel supports COD
    */
-  has_cod: Boolean,
+  has_cod: boolean,
   /**
    * Whether this logistic channel is enabled on shop level.
    */
-  enabled: Boolean,
+  enabled: boolean,
   /**
    * See Define FeeType, related to FeeType Value
    */
@@ -78,7 +78,7 @@ export interface Logistic {
     /**
      * The unit for the limit.
      */
-    unit: String,
+    unit: string,
   }
 }
 
@@ -90,5 +90,5 @@ export default interface GetLogisticResponse {
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
 }

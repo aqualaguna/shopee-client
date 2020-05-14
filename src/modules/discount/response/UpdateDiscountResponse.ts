@@ -10,5 +10,5 @@ export default interface UpdateDiscountResponse {
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
 }

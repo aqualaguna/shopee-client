@@ -249,7 +249,7 @@ export default class LogisticModule extends BaseModule {
    * Dedicated for crossborder SLS order airwaybill. May not be applicable for local channel airwaybill.
    * @param ordersn  The order serial numbers.
    */
-  getOrderLogistic(ordersn: Number, forder_id?: String): Promise<GetOrderLogisticResponse> {
+  getOrderLogistic(ordersn: Number, forder_id?: string): Promise<GetOrderLogisticResponse> {
     let full_url = this.client.defaults.baseURL + 'logistics/order/get';
     let params: any = {
       ordersn,
@@ -275,7 +275,7 @@ export default class LogisticModule extends BaseModule {
    * @param prefered Whether to make this logistic channel preferred. Indonestia logistics channel are not applicable.
    * @param cod Whether to enable COD for this logistic channel. Only COD supported channels are applicable.
    */
-  updateShopLogistic(logistic_id: Number, enabled?: Boolean, prefered?: Boolean, cod?: Boolean): Promise<UpdateLogisticResponse> {
+  updateShopLogistic(logistic_id: Number, enabled?: boolean, prefered?: boolean, cod?: boolean): Promise<UpdateLogisticResponse> {
     let full_url = this.client.defaults.baseURL + 'logistics/channel/update';
     let params: any = {
       partner_id: Number(this.config.partner_id),
@@ -283,13 +283,13 @@ export default class LogisticModule extends BaseModule {
       timestamp: Math.round(Date.now() / 1000),
       logistic_id,
     }
-    if (enabled instanceof Boolean) {
+    if (typeof enabled == "boolean") {
       params.enabled = enabled;
     }
-    if (prefered instanceof Boolean) {
+    if (typeof prefered == "boolean") {
       params.prefered = prefered;
     }
-    if (cod instanceof Boolean) {
+    if (typeof cod == "boolean") {
       params.cod = cod;
     }
 

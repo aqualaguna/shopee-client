@@ -2,9 +2,9 @@ export default interface AddCategoryRequest {
   /**
    * ShopCategory's name.
    */
-  name: String,
+  name: string,
   /**
    * ShopCategory's sort weight.
    */
-  sort_weight?: Number
+  sort_weight?: number
 }

@@ -17,5 +17,5 @@ export default interface GetTransactionListRequest extends PaginationRequest {
   /**
    * This field indicates the transaction type.
    */
-  transaction_type?: String,
+  transaction_type?: string,
 }

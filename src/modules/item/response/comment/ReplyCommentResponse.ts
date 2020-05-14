@@ -15,14 +15,14 @@ export interface ReplyError {
   /**
    * Error message description.
    */
-  error_msg: String,
+  error_msg: string,
 }
 
 export default interface ReplyCommentResponse {
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
   /**
    * list of success reply
    */

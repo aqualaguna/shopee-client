@@ -3,24 +3,24 @@ export interface SimpleAirwayBill {
   /**
    * Shopee's unique identifier for an order.
    */
-  orsersn: String,
+  orsersn: string,
   /**
    * The url of retrieving airway bill.
    */
-  airway_bill: String
+  airway_bill: string
 }
 
 export interface AirwayError {
   /**
    * Shopee's unique identifier for an order.
    */
-  ordersn: String,
+  ordersn: string,
   
-  error_code:String,
+  error_code:string,
   /**
    * The detail information of this error.
    */
-  error_description: String,
+  error_description: string,
 }
 
 export default interface GetAirwayBillResponse {
@@ -52,7 +52,7 @@ export default interface GetAirwayBillResponse {
     /**
      * The list contains urls of retrieving airway bill in PDF format. Each url contains the airway bills which is in the same logistics channel.
      */
-    airway_bills: String[],
+    airway_bills: string[],
     /**
      * This list contains the ordersn of all orders that failed to retrieve airway bill in this call. AirwayBill is no longer fetchable after the order status is updated to SHIPPED.
      */
@@ -61,5 +61,5 @@ export default interface GetAirwayBillResponse {
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
 }

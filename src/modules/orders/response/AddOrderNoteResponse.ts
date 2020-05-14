@@ -2,14 +2,14 @@ export default interface AddOrderNoteResponse {
   /**
    * Shopee's unique identifier for an order.
    */
-  ordersn: String,
+  ordersn: string,
   /**
    * The success or error message.
    */
-  msg: String,
+  msg: string,
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
 
 }

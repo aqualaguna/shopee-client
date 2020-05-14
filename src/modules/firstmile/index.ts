@@ -104,7 +104,7 @@ export default class FirstMileModule extends BaseModule {
    * Only applicable to cross-border sellers in China.
    * @param request 
    */
-  getFmTnDetail(fm_tn: String): Promise<GetFmTnDetailResponse> {
+  getFmTnDetail(fm_tn: string): Promise<GetFmTnDetailResponse> {
     let full_url = this.client.defaults.baseURL + 'fm_tn/detail';
     let params: any = {
       fm_tn,
@@ -127,7 +127,7 @@ export default class FirstMileModule extends BaseModule {
    * @param fm_tn_list The set of first-mile tracking numbers. Up to 50 tracking numbers in one call.
    * @param is_batch Option to get batch airway bills in single file. Default value is false.
    */
-  getFmTrackingNoWaybill(fm_tn_list: String[],is_batch?: Boolean): Promise<GetFmTnDetailResponse> {
+  getFmTrackingNoWaybill(fm_tn_list: string[],is_batch?: boolean): Promise<GetFmTnDetailResponse> {
     let full_url = this.client.defaults.baseURL + 'fm_tn/waybill';
     let params: any = {
       fm_tn_list,
@@ -151,7 +151,7 @@ export default class FirstMileModule extends BaseModule {
    * Only applicable to cross-border sellers in China.
    * @param area Use this field to specify the region you want to ship parcel. sample: cn
    */
-  getShopFMChannel(area: String): Promise<GetFmTnDetailResponse> {
+  getShopFMChannel(area: string): Promise<GetFmTnDetailResponse> {
     let full_url = this.client.defaults.baseURL + 'fm_tn/channels';
     let params: any = {
       area,

@@ -28,7 +28,7 @@ export interface BatchResultVariant {
   /**
    * List of item_id which have been updated successfully.
    */
-  modifications: String[]|ModificationVariant[],
+  modifications: string[]|ModificationVariant[],
 }
 
 export default interface UpdateVariantPriceBatchResponse {
@@ -39,5 +39,5 @@ export default interface UpdateVariantPriceBatchResponse {
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
 }

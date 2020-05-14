@@ -4,6 +4,6 @@ export default interface FirstMileUnbindRequest {
   /**
    * The first-mile tracking number.
    */
-  fm_tn: String,
+  fm_tn: string,
   order_list: OrderFmItem[],
 }

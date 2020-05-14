@@ -37,9 +37,9 @@ export default interface getItemDetailResponse {
   /**
    * Warning returned when the category or attributes are missing/invalid.
    */
-  warning: String,
+  warning: string,
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
 }

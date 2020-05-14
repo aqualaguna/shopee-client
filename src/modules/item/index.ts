@@ -553,7 +553,7 @@ export default class ItemModule extends BaseModule {
    * Use this call to get tier-variation basic information under an item
    * @param item_id unique identifier id.
    */
-  getTierVariation(item_id: String ) : Promise<GetVariationTierResponse> {
+  getTierVariation(item_id: string ) : Promise<GetVariationTierResponse> {
     let full_url = this.client.defaults.baseURL + 'item/tier_var/get';
     let params: any = {
       item_id,
@@ -691,7 +691,7 @@ export default class ItemModule extends BaseModule {
    * Use this API to get recommended category ids according to item name.
    * @param name title of product 
    */
-  getRecommendCategory(name: String ) : Promise<GetRecommendCategoryResponse> {
+  getRecommendCategory(name: string ) : Promise<GetRecommendCategoryResponse> {
     let full_url = this.client.defaults.baseURL + 'item/categories/get_recommend';
     let params: any = {
       name,
@@ -711,7 +711,7 @@ export default class ItemModule extends BaseModule {
    * Use this api to get comment by shopid/itemid/comment_id
    * @param name title of product 
    */
-  getComment(name: String ) : Promise<GetRecommendCategoryResponse> {
+  getComment(name: string ) : Promise<GetRecommendCategoryResponse> {
     let full_url = this.client.defaults.baseURL + 'items/comments/get';
     let params: any = {
       name,

@@ -4,7 +4,7 @@ export interface FMTn {
   /**
    * The specified delivery date.
    */
-  declare_date: String,
+  declare_date: string,
   /**
    * The logistics status for bound orders.
    */
@@ -12,7 +12,7 @@ export interface FMTn {
   /**
    * The first-mile tracking number.
    */
-  fm_tn: String,
+  fm_tn: string,
   
 }
 
@@ -20,10 +20,10 @@ export default interface GetShopFMTrackingNoResponse {
   /**
    * This is to indicate whether the order list is more than one page. If this value is true, you may want to continue to check next page to retrieve orders.
    */
-  has_more: Boolean,
+  has_more: boolean,
   fm_tn_list: FMTn[],
   /**
    * The identifier for an API request for error tracking.
    */
-  request_id: String,
+  request_id: string,
 }

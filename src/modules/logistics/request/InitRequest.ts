@@ -2,7 +2,7 @@ export default interface InitRequest {
   /**
    * The order serial numbers.
    */
-  ordersn: String,
+  ordersn: string,
   /**
    * Required parameter ONLY if GetParameterForInit returns "pickup" or if GetLogisticsInfo returns "pickup" under "info_needed" for the same order. Developer should still include "pickup" field in the call even if "pickup" has empty value.
    */
@@ -14,7 +14,7 @@ export default interface InitRequest {
     /**
      * The pickup time id. Retrieved from shopee.logistics.GetTimeSlot.
      */
-    pickup_time_id?: String,
+    pickup_time_id?: string,
   },
   /**
    * Required parameter ONLY if GetParameterForInit returns "dropoff" or if GetLogisticsInfo returns "dropoff" under "info_needed" for the same order.
@@ -32,12 +32,12 @@ export default interface InitRequest {
     /**
      * The real name of sender.
      */
-    sender_real_name?: String,
+    sender_real_name?: string,
     /**
      * Need input this field when "tracking_no" is returned from "info_need".
      * Please note that this tracking number is assigned by third-party shipping carrier for item shipment.
      */
-    tracking_no?: String,
+    tracking_no?: string,
   },
   /**
    * Optional parameter when GetParameterForInit returns "non-integrated" or GetLogisticsInfo returns "non-integrated" under "info_needed".
@@ -46,10 +46,10 @@ export default interface InitRequest {
     /**
      * Optional parameter for non-integrated channel order. The tracking number assigned by the shipping carrier for item shipment.
      */
-    tracking_no?: String,
+    tracking_no?: string,
   }
   /**
    * Shopee's unique identifier for a fulfillment order.
    */
-  forder_id?: String,
+  forder_id?: string,
 }

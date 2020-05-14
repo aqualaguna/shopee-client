@@ -3,7 +3,7 @@ export interface BoostFail {
   /**
    * to indicate error type.
    */
-  error_code: String,
+  error_code: string,
   /**
    * Failed item id.
    */
@@ -11,7 +11,7 @@ export interface BoostFail {
   /**
    * error description
    */
-  description: String,
+  description: string,
 }
 export interface BoostBatchResult {
   /**
@@ -32,5 +32,5 @@ export default interface BoostResponse {
   /**
    * The identifier of the API request for error tracking
    */
-  request_id: String,
+  request_id: string,
 }

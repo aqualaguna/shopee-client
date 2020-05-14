@@ -14,7 +14,7 @@ export default class ReturnModule extends BaseModule {
    * Confirm return
    * @param returnsn serial number of return
    */
-  confirmReturn(returnsn: String): Promise<ConfirmReturnResponse> {
+  confirmReturn(returnsn: string): Promise<ConfirmReturnResponse> {
     let full_url = this.client.defaults.baseURL + 'returns/confirm';
     let params: any = {
       returnsn,
@@ -74,7 +74,7 @@ export default class ReturnModule extends BaseModule {
    * Use this api to get detail information of a returned order
    * @param returnsn
    */
-  getReturnDetail(returnsn: String): Promise<GetReturnDetailResponse> {
+  getReturnDetail(returnsn: string): Promise<GetReturnDetailResponse> {
     let full_url = this.client.defaults.baseURL + 'returns/detail';
     let params: any = {
       returnsn,

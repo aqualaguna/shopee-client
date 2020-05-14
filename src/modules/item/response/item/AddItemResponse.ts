@@ -8,7 +8,7 @@ export interface Item {
   /**
    * An item SKU (stock keeping unit) is an identifier defined by a seller, sometimes called parent SKU. Item SKU can be assigned to an item in Shopee Listings.
    */
-  item_sku: String,
+  item_sku: string,
   /**
    * Enumerated type that defines the current status of the item. Applicable values: NORMAL, DELETED, UNLIST and BANNED.
    */
@@ -16,23 +16,23 @@ export interface Item {
   /**
    * Name of the item in local language.
    */
-  name: String,
+  name: string,
   /**
    * Description of the item in local language.
    */
-  description: String,
+  description: string,
   /**
    * Image URLs of the item. It contains at most 9 URLs.
    */
-  images: String[],
+  images: string[],
   /**
    * The three-digit code representing the currency unit used for the item in Shopee Listings.
    */
-  currency: String,
+  currency: string,
   /**
    * This is to indicate whether the item has variation(s).
    */
-  has_variation: Boolean,
+  has_variation: boolean,
   /**
    * The current price of the item in the listing currency.If item is in promotion, this value is discount price.
    */
@@ -58,7 +58,7 @@ export interface Item {
   /**
    * Url of size chart image. Only particular categories support it. max size: 500KB. 2000*2000 pixels
    */
-  size_chart?: String,
+  size_chart?: string,
   /**
    * This indicates whether the item is secondhand.
    */
@@ -131,7 +131,7 @@ export interface Item {
   /**
    * Use this field to identify whether the item is pre-order. Applicable value: true/false.
    */
-  is_pre_order: Boolean,
+  is_pre_order: boolean,
 }
 
 export interface Variant {
@@ -142,11 +142,11 @@ export interface Variant {
   /**
    * A variation SKU (stock keeping unit) is an identifier defined by a seller. It is only intended for the seller's use. Many sellers assign a SKU to an item of a specific type, size, and color, which are variations of one item in Shopee Listings.
    */
-  variation_sku: String,
+  variation_sku: string,
   /**
    * Name of the variation that belongs to the same item. A seller can offer variations of the same item. For example, the seller could create a fixed-priced listing for a t-shirt design and offer the shirt in different colors and sizes. In this case, each color and size combination is a separate variation. Each variation can have a different quantity and price.
    */
-  name: String,
+  name: string,
   /**
    * The current price of the variation in the listing currency.If item is in promotion, this value is discount price.
    */
@@ -190,17 +190,17 @@ export default interface AddItemResponse {
    * Item's info.
    */
   item: Item,
-  warning: String,
+  warning: string,
   /**
    * Image URLs for fail download.
    */
-  fail_image: String[],
+  fail_image: string[],
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
   /**
    * Url of size chart image. Only particular categories support it. max size: 500KB. 2000*2000 pixels
    */
-  size_chart: String,
+  size_chart: string,
 }

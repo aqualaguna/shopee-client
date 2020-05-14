@@ -4,7 +4,7 @@ export default interface UpdateTierVariationRequest {
   /**
    * The identity of product item.
    */
-  item_id: Number,
+  item_id: number,
   /**
    * Tier_variation list. Length must be 1 or 2.
    */

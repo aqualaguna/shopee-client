@@ -7,7 +7,7 @@ export interface AddDiscountError {
   /**
    * error message.
    */
-  error_msg: String,
+  error_msg: string,
   /**
    * Shopee's unique identifier for an item.
    */
@@ -24,10 +24,10 @@ export default interface AddDiscountResponse {
    * The number of items that add successfully.
    */
   count: Number,
-  warning: String,
+  warning: string,
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
   errors: AddDiscountError[]
 }

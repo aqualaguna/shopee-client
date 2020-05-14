@@ -48,7 +48,7 @@ export default class PublicModule extends BaseModule {
    * @param partner_id Partner ID is assigned upon registration is successful. Required for all requests.
    * @param country ID/MY/SG/VN/PH/TH/TW
    */
-  getPaymentList(partner_id: Number, country?: String): Promise<GetCategoriesByCountryResponse> {
+  getPaymentList(partner_id: Number, country?: string): Promise<GetCategoriesByCountryResponse> {
     let full_url = this.client.defaults.baseURL + 'payment/list';
     let params: any = {
       partner_id,

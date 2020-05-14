@@ -4,10 +4,10 @@ export default interface GetCommentRequest extends PaginationRequest{
   /**
    * The identity of product item.
    */
-  item_id: Number,
+  item_id: number,
   /**
    * The identity of comment.
    */
-  cmt_id?: Number,
+  cmt_id?: number,
 
 }

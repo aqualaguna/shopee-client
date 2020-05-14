@@ -8,14 +8,14 @@ export interface Failure {
   /**
    * The identifier for an API request for error tracking
    */
-  error_description: String,
+  error_description: string,
 }
 
 export interface BatchResult {
   /**
    * List of item_id which have been updated successfully.
    */
-  modifications: String[],
+  modifications: string[],
   /**
    * The identifier for an API request for error tracking
    */
@@ -30,5 +30,5 @@ export default interface UpdatePriceBatchResponse {
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
 }

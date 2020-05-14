@@ -3,31 +3,31 @@ export interface Waybill {
   /**
    * Shopee's unique identifier for an order.
    */
-  ordersn: String,
+  ordersn: string,
   /**
    * The unique identifier for a fulfillment order.
    */
-  forder_id: String,
+  forder_id: string,
   /**
    * The url of retrieving airway bill.
    */
-  waybill: String
+  waybill: string
 }
 
 export interface WaybillError {
   /**
    * The ordersn of orders which occurred error.
    */
-  ordersn: String,
+  ordersn: string,
   /**
    * The forder_id of fulfillment orders which occurred error.
    */
-  forder_id: String,
-  error_code: String,
+  forder_id: string,
+  error_code: string,
   /**
    * The detail information of this error.
    */
-  error_description: String,
+  error_description: string,
 }
 
 export default interface GetForderWaybillResponse {
@@ -63,10 +63,10 @@ export default interface GetForderWaybillResponse {
     /**
      * The url of retrieving airway bill.
      */
-    waybills: String[],
+    waybills: string[],
   },
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
 }

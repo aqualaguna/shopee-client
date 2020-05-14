@@ -2,7 +2,7 @@ import { ItemUnlist } from "../../request/item/UnlistRequest";
 
 export interface FailedItem {
   item_id: Number,
-  error_description: String,
+  error_description: string,
 }
 
 export default interface UnlistResponse {
@@ -14,6 +14,6 @@ export default interface UnlistResponse {
   /**
    * The identifier of the API request for error tracking
    */
-  request_id: String,
+  request_id: string,
 
 }

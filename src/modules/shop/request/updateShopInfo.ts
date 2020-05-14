@@ -2,26 +2,26 @@ export default interface UpdateShopInfo {
   /**
    * Name of the shop.
    */
-  shop_name?: String,
+  shop_name?: string,
   /**
    * Description of the shop.
    */
-  shop_description?: String,
+  shop_description?: string,
   /**
    * List of videos URLs of the shop.
    */
-  videos?: String[],
+  videos?: string[],
   /**
    * List of images URLs of the shop.
    * please upload first using image upload
    */
-  images?: String[],
+  images?: string[],
   /**
    * Allow negotiations or not, 1: don't allow, 0: allow.
    */
-  disable_make_offer?: Boolean,
+  disable_make_offer?: boolean,
   /**
    * Display pickup address or not.
    */
-  enable_display_unitno?: Boolean,
+  enable_display_unitno?: boolean,
 }

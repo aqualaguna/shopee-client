@@ -4,7 +4,7 @@ export default interface deleteVariantResponse  extends deleteVariantRequest {
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
   /**
    * The time when stock of the variation is updated.
    */

@@ -3,7 +3,7 @@ export interface OrderReleaseItem {
   /**
    * Shopee's unique identifier for an order.
    */
-  ordersn: String,
+  ordersn: string,
   /**
    * Order's escrow amount.
    */
@@ -19,5 +19,5 @@ export default interface GetEscrowReleasedOrderResponse {
    * Filtered orders' escrow information.
    */
   orders: OrderReleaseItem[],
-  request_id: String,
+  request_id: string,
 }

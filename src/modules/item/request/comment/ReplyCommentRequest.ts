@@ -7,7 +7,7 @@ export interface ReplyItem {
   /**
    * Content of the comment.
    */
-  comment: String,
+  comment: string,
 
 }
 

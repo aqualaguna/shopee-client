@@ -3,7 +3,7 @@ export interface SimpleOrder {
   /**
    * The order serial numbers. Make sure the order has trackingNo generated before calling this API.
    */
-  ordersn: String,
+  ordersn: string,
 }
 
 export default interface GetForderWaybillRequest {
@@ -14,14 +14,14 @@ export default interface GetForderWaybillRequest {
   /**
    * The unique identifier for a fulfillment order.
    */
-  forder_id?: String,
+  forder_id?: string,
   /**
    * This field is used for logistic_id 80003 and 80004,true standards for JOB shipping method, false standards for Regular shipping method.
    */
-  is_job?: Boolean,
+  is_job?: boolean,
   /**
    * Option to get batch airway bills in single file. Default value is false.
    */
-  is_batch?: Boolean,
+  is_batch?: boolean,
   
 }

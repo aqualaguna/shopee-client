@@ -38,11 +38,11 @@ export interface ReturnItem {
   /**
    * Name of item in local language.
    */
-  name: String,
+  name: string,
   /**
    * Image URLs of item.
    */
-  images: String[],
+  images: string[],
   /**
    * Amount of this item.
    */
@@ -54,11 +54,11 @@ export interface ReturnItem {
   /**
    * To indicate if this item belongs to an addon deal.
    */
-  is_add_on_deal: Boolean,
+  is_add_on_deal: boolean,
   /**
    * To indicate if this item is main item or sub item. True means main item, false means sub item.
    */
-  is_main_item: Boolean,
+  is_main_item: boolean,
   /**
    * A unique ID to distinguish groups of items in Cart, and Order. (e.g. AddOnDeal)
    */
@@ -69,7 +69,7 @@ export interface Return {
   /**
    * Image URLs of return.
    */
-  images: String[],
+  images: string[],
   /**
    * Reason for return product. Applicable values: See Data Definition- ReturnReason.
    */
@@ -77,7 +77,7 @@ export interface Return {
   /**
    * Reason that buyer provide.
    */
-  text_reason: String,
+  text_reason: string,
   /**
    * The serial number of return.
    */
@@ -89,7 +89,7 @@ export interface Return {
   /**
    * Currency of the return.
    */
-  currency: String,
+  currency: string,
   /**
    * The time of return create.
    */
@@ -109,7 +109,7 @@ export interface Return {
   /**
    * The tracking number assigned by the shipping carrier for item shipment.
    */
-  tracking_number: String,
+  tracking_number: string,
   /**
    * The reason of seller dispute return. While the return has been disputed, this field is useful. Applicable values: See Data Definition- ReturnDisputeReason.
    */
@@ -117,11 +117,11 @@ export interface Return {
   /**
    * The reason that seller provide. While the return has been disputed, this field is useful.
    */
-  dispute_text_reason: String,
+  dispute_text_reason: string,
   /**
    * Items to be sent back to seller. Can be either integrated/non-integrated.
    */
-  needs_logistics: Boolean,
+  needs_logistics: boolean,
   /**
    * Order price before discount.
    */
@@ -131,22 +131,22 @@ export interface Return {
     /**
      * Buyer's nickname.
      */
-    username: String,
+    username: string,
     /**
      * Buyer's email.
      */
-    email:String,
+    email:string,
     /**
      * Buyer's picture.
      */
-    portrait: String,
+    portrait: string,
   },
   
   item: ReturnItem[],
   /**
    * Shopee's unique identifier for an order.
    */
-  ordersn: String,
+  ordersn: string,
 }
 
 export default interface GetReturnListResponse {
@@ -154,9 +154,9 @@ export default interface GetReturnListResponse {
   /**
    * This is to indicate whether the item list is more than one page. If this value is true, you may want to continue to check next page to retrieve the rest of items.
    */
-  more: Boolean,
+  more: boolean,
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
 }

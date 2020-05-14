@@ -1,7 +1,7 @@
 import { FailFm } from "./FirstMileCodeBindOrderResponse";
 
 export default interface FirstMileUnbindResponse {
-  fm_tn: String,
-  success: Boolean,
+  fm_tn: string,
+  success: boolean,
   fail_list: FailFm[],
 }

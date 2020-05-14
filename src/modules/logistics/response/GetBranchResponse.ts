@@ -8,31 +8,31 @@ export interface Branch {
   /**
    * The country of specify branch.
    */
-  country: String,
+  country: string,
   /**
    * The state of specify branch.
    */
-  state: String,
+  state: string,
   /**
    * The city of specify branch.
    */
-  city: String,
+  city: string,
   /**
    * The address description of specify branch.
    */
-  address: String,
+  address: string,
   /**
    * The zipcode of specify branch.
    */
-  zipcode: String,
+  zipcode: string,
   /**
    * The district of specify branch.
    */
-  district: String,
+  district: string,
   /**
    * The town of specify branch.
    */
-  town: String,
+  town: string,
 
 }
 
@@ -44,5 +44,5 @@ export default interface GetBranchResponse {
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
 }

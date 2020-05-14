@@ -44,7 +44,7 @@ export interface Promotion {
   /**
    * The stage at which the promotion goes. Available values: ongoing/upcoming.
    */
-  staging: String,
+  staging: string,
 
 }
 
@@ -56,7 +56,7 @@ export interface PromotionError {
   /**
    * Error Message.
    */
-  error_msg: String,
+  error_msg: string,
 
 }
 export interface PromotionItem {
@@ -79,5 +79,5 @@ export default interface GetPromotionInfoResponse {
    * The set of item's promotion list.
    */
   items: PromotionItem[],
-  request_id: String,
+  request_id: string,
 }

@@ -3,7 +3,7 @@ export default interface GenerateFMTrackingNoRequest {
    * This field is used for seller to specify the declare time.
    * sample : 2019-01-01
    */
-  declare_date: String,
+  declare_date: string,
   /**
    * The number of first-mile tracking numbers generated.
    */
@@ -15,22 +15,22 @@ export default interface GenerateFMTrackingNoRequest {
     /**
      * The full address of the seller.
      */
-    address: String,
+    address: string,
     /**
      * Seller's name for the address.
      */
-    name: String,
+    name: string,
     /**
      * Seller's postal code.
      */
-    zipcode: String,
+    zipcode: string,
     /**
      * Seller's location.
      */
-    area: String,
+    area: string,
     /**
      * Seller's phone number.
      */
-    phone: String,
+    phone: string,
   }
 }

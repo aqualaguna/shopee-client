@@ -70,7 +70,7 @@ export default class ShopeeClient {
         }
     }
 
-    baseUrl() : String {
+    baseUrl() : string {
         return this.client.defaults.baseURL || '';
     }
 

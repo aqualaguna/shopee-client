@@ -3,11 +3,11 @@ export interface OrderFmItem {
   /**
    * Shopee's unique identifier for an order.
    */
-  ordersn: String,
+  ordersn: string,
   /**
    * The unique identifier for a fulfillment order.
    */
-  forder_id?: String
+  forder_id?: string
 }
 
 
@@ -19,11 +19,11 @@ export default interface FirstMileCodeBindOrderRequest {
   /**
    * The first-mile tracking number.
    */
-  fm_tn: String,
+  fm_tn: string,
   /**
    * The shipment method for bound orders, should be pickup or dropoff.
    */
-  shipment_method: String,
+  shipment_method: string,
   /**
    * The identity of first-mile logistic channel
    */
@@ -52,5 +52,5 @@ export default interface FirstMileCodeBindOrderRequest {
    * Use this field to specify the region you want to ship parcel.
    * sample: cn
    */
-  area: String,
+  area: string,
 }

@@ -2,10 +2,10 @@ export default interface ConfirmReturnResponse {
   /**
    * The serial number of return.
    */
-  returnsn: String,
-  msg: String,
+  returnsn: string,
+  msg: string,
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
 }

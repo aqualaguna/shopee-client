@@ -15,7 +15,7 @@ export interface OrderSimple {
   /**
    * Shopee's unique identifier for an order.
    */
-  ordersn: String,
+  ordersn: string,
   /**
    * Enumerated type that defines the current status of the order. Applicable values: See Data Definition- OrderStatus.
    */
@@ -34,9 +34,9 @@ export default interface GetOrderListResponse {
   /**
    * This is to indicate whether the order list is more than one page. If this value is true, you may want to continue to check next page to retrieve orders.
    */
-  more: Boolean,
+  more: boolean,
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
 }

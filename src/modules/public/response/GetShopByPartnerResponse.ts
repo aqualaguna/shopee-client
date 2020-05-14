@@ -4,7 +4,7 @@ export interface Authed {
   /**
    * The two-digit code representing the country where the order was made.
    */
-  country: String,
+  country: string,
   /**
    * Shopee's unique identifier for a shop.
    */
@@ -31,5 +31,5 @@ export default interface GetShopByPartnerResponse {
   /**
    * The identifier of the API request for error tracking
    */
-  request_id: String,
+  request_id: string,
 }

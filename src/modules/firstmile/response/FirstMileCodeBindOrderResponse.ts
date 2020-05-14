@@ -3,29 +3,29 @@ export interface FailFm {
   /**
    * Shopee's unique identifier for an order.
    */
-  ordersn: String,
+  ordersn: string,
   /**
    * Shopee's unique identifier for an order.
    */
-  forder_id: String,
+  forder_id: string,
   /**
    * The reason why the order/fulfillment order cannot be bound.
    */
-  reason: String
+  reason: string
 }
 
 export default interface FirstMileCodeBindOrderResponse {
   /**
    * This is to indicate whether orders are bound successfully.
    */
-  success: Boolean,
+  success: boolean,
   /**
    * The first-mile tracking number.
    */
-  fm_tn: String,
+  fm_tn: string,
   fail_list: FailFm[],
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String
+  request_id: string
 }

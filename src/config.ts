@@ -1,9 +1,9 @@
 export interface ShopeeApiConfig {
-  is_uat?: Boolean,
-  shop_id: String|null,
-  partner_id: String|null,
-  partner_key: String|null,
-  redirect_uri?: String
+  is_uat?: boolean,
+  shop_id: string|null,
+  partner_id: string|null,
+  partner_key: string|null,
+  redirect_uri?: string
 }
 let defaultConfig: ShopeeApiConfig = {
   is_uat: false,

@@ -4,7 +4,7 @@ export default interface UpdateTierIndexRequest {
   /**
    * 2-Tier variation list.
    */
-  item_id: Number,
+  item_id: number,
   /**
    * 2-Tier variation list.
    */

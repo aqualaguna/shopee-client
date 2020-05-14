@@ -2,7 +2,7 @@ export interface ItemPriceModified {
   /**
    * Shopee's unique identifier for an item.
    */
-  item_id: String,
+  item_id: string,
   /**
    * The time when price of the item is updated.
    */
@@ -22,5 +22,5 @@ export default interface UpdatePriceResponse {
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
 }

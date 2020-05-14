@@ -2,17 +2,17 @@ export default interface DeleteItemResponse {
   /**
    * List of invalid item ids.
    */
-  invalid_item_id: Number[],
+  invalid_item_id: number[],
   /**
    * ShopCategory's unique identifier.
    */
-  shop_category_id: Number,
+  shop_category_id: number,
   /**
-   * Number of items in the shop category.
+   * number of items in the shop category.
    */
-  count: Number,
+  count: number,
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
 }

@@ -3,15 +3,15 @@ export interface PaymentMethod {
   /**
    * The payment method
    */
-  payment_method: String,
+  payment_method: string,
   /**
    * The country for this payment method
    */
-  country: String,
+  country: string,
 
 }
 
 export default interface GetPaymentListResponse {
   payment_method_list: PaymentMethod[],
-  request_id: String,
+  request_id: string,
 }

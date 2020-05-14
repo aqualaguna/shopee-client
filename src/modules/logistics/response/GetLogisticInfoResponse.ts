@@ -6,35 +6,35 @@ export interface BaseAddress {
   /**
    * This object contains detailed breakdown for the recipient address.
    */
-  name: String,
+  name: string,
   /**
    * This object contains detailed breakdown for the recipient address.
    */
-  phone: String,
+  phone: string,
   /**
    * The town of the recipient's address. Whether there is a town will depend on the region and/or country.
    */
-  town: String,
+  town: string,
   /**
    * The district of the recipient's address. Whether there is a town will depend on the region and/or country.
    */
-  district: String,
+  district: string,
   /**
    * The city of the recipient's address. Whether there is a town will depend on the region and/or country.
    */
-  city: String,
+  city: string,
   /**
    * The state/province of the recipient's address. Whether there is a town will depend on the region and/or country.
    */
-  state: String,
+  state: string,
   /**
    * The two-digit code representing the country of the Recipient.
    */
-  country: String,
+  country: string,
   /**
    * Recipient's postal code.
    */
-  zipcode: String,
+  zipcode: string,
 }
 
 export interface PAddress extends AddressResponse {
@@ -76,18 +76,18 @@ export default interface GetLogisticInfoResponse {
     /**
      * Could contain 'address_id' and 'pickup_time_id'. Choose one address_id and its corresponding pickup_time_id to Init. If it has empty value, developer should still include "pickup" field in Init API.
      */
-    pickup: String[],
+    pickup: string[],
     /**
      * Could contain 'branch_id', 'sender_real_name' or 'tracking_no'. If it contains 'branch_id', choose one to Init. If it contains 'sender_real_name' or 'tracking_no', should manually input these values in Init API. If it has empty value, developer should still include "dropoff" field in Init API.
      */
-    dropoff: String[],
+    dropoff: string[],
     /**
      * Could contain 'tracking_no'. If it contains 'tracking_no', should manually input these values in Init API. If it has empty value, developer should still include "non-integrated" field in Init API.
      */
-    non_integrated: String[]
+    non_integrated: string[]
   },
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
 }

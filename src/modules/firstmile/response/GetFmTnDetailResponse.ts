@@ -13,15 +13,15 @@ export interface OrderFmItem {
   /**
    * Shopee's unique identifier for an order.
    */
-  ordersn: String,
+  ordersn: string,
   /**
    * The unique identifier for a fulfillment order.
    */
-  forder_id: String,
+  forder_id: string,
   /**
    * The tracking number of SLS for orders/forders.
    */
-  sls_tn: String
+  sls_tn: string
 }
 
 export default interface GetFmTnDetailResponse {
@@ -32,11 +32,11 @@ export default interface GetFmTnDetailResponse {
   /**
    * The first-mile tracking number.
    */
-  fm_tn: String,
+  fm_tn: string,
   /**
    * The shipment method for bound orders, should be pickup or dropoff.
    */
-  shipping_method: String,
+  shipping_method: string,
   /**
    * The logistics status for first-mile tracking number. Status could be: INIT,ORDER_CREATED,PICKED_UP,DELIVERED,ORDER_RECEIVED,CANCELING,CANCELED.
    */
@@ -45,9 +45,9 @@ export default interface GetFmTnDetailResponse {
   /**
    * The specified delivery date.
    */
-  declare_date: String,
+  declare_date: string,
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
 }

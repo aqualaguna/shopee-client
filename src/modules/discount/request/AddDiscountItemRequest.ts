@@ -1,6 +1,6 @@
 import { DiscountItem } from "./AddDiscountRequest";
 
 export default interface AddDiscountItemRequest {
-  discount_id: Number,
+  discount_id: number,
   items: DiscountItem[],
 }

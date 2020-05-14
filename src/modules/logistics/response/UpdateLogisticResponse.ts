@@ -10,17 +10,17 @@ export default interface UpdateLogisticResponse {
   /**
    * Whether this logistic channel is enabled
    */
-  enabled: Boolean,
+  enabled: boolean,
   /**
    * Whether this logistic channel is preferred
    */
-  prefered: Boolean,
+  prefered: boolean,
   /**
    * WHether COD is enabled for this channel
    */
-  cod: Boolean,
+  cod: boolean,
   /**
    * The identifier of the API request for error tracking
    */
-  request_id: String, 
+  request_id: string, 
 }

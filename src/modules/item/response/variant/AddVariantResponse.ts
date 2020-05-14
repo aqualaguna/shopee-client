@@ -20,7 +20,7 @@ export default interface AddVariantResponse {
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
   variations: AddVariantItem[],
   /**
    * The time when stock of the variation is updated.

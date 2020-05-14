@@ -8,7 +8,7 @@ export interface TopPickItem {
   /**
    * Item Name
    */
-  item_name: String,
+  item_name: string,
   /**
    * Item discounted price(original price if no discount). Item level price will return if it has variation.
    */
@@ -24,7 +24,7 @@ export interface TopPick {
   /**
    * Collection name
    */
-  name: String,
+  name: string,
   /**
    * Collection ID
    */
@@ -32,7 +32,7 @@ export interface TopPick {
   /**
    * True or False
    */
-  is_activated: Boolean,
+  is_activated: boolean,
   /**
    * Item list of the collection
    */
@@ -45,5 +45,5 @@ export default interface GetTopPickListResponse {
    * Collection list
    */
   collections: TopPick[],
-  request_id: String,
+  request_id: string,
 }

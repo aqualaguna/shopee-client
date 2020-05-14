@@ -3,7 +3,7 @@ export interface Pickup {
   /**
    * The identity of pickuptime.
    */
-  pickup_time_id: String,
+  pickup_time_id: string,
   /**
    * The date of pickup time. In timestamp.
    */
@@ -11,7 +11,7 @@ export interface Pickup {
   /**
    * The text description of pickup time. Only applicable for certain channels.
    */
-  time_text: String,
+  time_text: string,
 }
 
 export default interface GetTimeSlotResponse {
@@ -19,5 +19,5 @@ export default interface GetTimeSlotResponse {
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
 }

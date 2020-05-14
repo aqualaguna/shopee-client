@@ -72,7 +72,7 @@ export default class TopPickModule extends BaseModule {
    * Use this API to update the collection name, the item list in a collection, or to activate a collection.
    * @param request
    */
-  deleteTopPick(top_picks_id : Number): Promise<DeleteTopPickResponse> {
+  deleteTopPick(top_picks_id : number): Promise<DeleteTopPickResponse> {
     let full_url = this.client.defaults.baseURL + 'top_picks/delete';
     let params: any = {
       top_picks_id,

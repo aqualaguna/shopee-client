@@ -2,11 +2,11 @@ export interface Image {
   /**
    * origin image url
    */
-  image_url: String,
+  image_url: string,
   /**
    * Shopee image url
    */
-  shopee_image_url: String,
+  shopee_image_url: string,
   
 }
 export default interface uploadResponse {
@@ -17,5 +17,5 @@ export default interface uploadResponse {
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
 }

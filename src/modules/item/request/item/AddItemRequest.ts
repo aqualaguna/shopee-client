@@ -2,7 +2,7 @@ export interface ImageShopee {
   /**
    * Url of items' image.The system would synchronous download the image one by one.if one of those image can not fetch, would get a warning in result.But can continue the AddItem proccessing.
    */
-  url: String,
+  url: string,
 }
 
 export interface Attribute {
@@ -13,7 +13,7 @@ export interface Attribute {
   /**
    * related to shopee.item.GetAttributes one of result.attributes.options. Max length is 40 letters.
    */
-  value: String,
+  value: string,
 }
 
 export interface Logistic {
@@ -24,7 +24,7 @@ export interface Logistic {
   /**
    * related to shopee.logistics.GetLogistics result.logistics.enabled only affect current item
    */
-  enabled: Boolean,
+  enabled: boolean,
   /**
    * Only needed when logistics fee_type = CUSTOM_PRICE.
    */
@@ -36,7 +36,7 @@ export interface Logistic {
   /**
    * when seller chooses this option, the shipping fee of this channel on item will be set to 0. Default value is False.
    */
-  is_free?: Boolean,
+  is_free?: boolean,
 }
 
 export interface Wholesale {
@@ -62,11 +62,11 @@ export default interface AddItemRequest {
   /**
    * Name of the item in local language.
    */
-  name: String,
+  name: string,
   /**
    * Description of the item in local language. HTML is not supported.
    */
-  description: String,
+  description: string,
   /**
    * The current price of the item in the listing currency. This value will be ignored if there is variation level price input.
    */
@@ -78,7 +78,7 @@ export default interface AddItemRequest {
   /**
    * An item SKU (stock keeping unit) is an identifier defined by a seller, sometimes called parent SKU. Item SKU can be assigned to an item in Shopee Listings.
    */
-  item_sku?: String,
+  item_sku?: string,
   /**
    * Image URLs of the item. Up to 9 images(12 images for TW mall seller), max 2.0 MB each.Image format accepted: JPG, JPEG, PNG.Suggested dimension: 1024 x 1024 px. Max size: 2MB
    */
@@ -120,7 +120,7 @@ export default interface AddItemRequest {
   /**
    * Url of size chart image. Only particular categories support it. max size: 500KB. 2000*2000 pixels
    */
-  size_chart?: String,
+  size_chart?: string,
   /**
    * This indicates whether the item is secondhand.
    */
@@ -132,7 +132,7 @@ export default interface AddItemRequest {
   /**
    * Use this field to identify whether the item is pre-order. Applicable value: true/false.
    */
-  is_pre_order?: Boolean,
+  is_pre_order?: boolean,
 }
 
 export enum ItemStatus {

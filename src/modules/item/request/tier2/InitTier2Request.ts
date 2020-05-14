@@ -5,15 +5,15 @@ export interface TierVariation {
   /**
    * Tier variation name.
    */
-  name: String,
+  name: string,
   /**
    * Tier variation value options list. Option length should be under 20. Quantity of combinations of all 2 tier options is up to 50.
    */
-  options: String[],
+  options: string[],
   /**
    * Tier variation images. Can only be applied for the first level options. Urls sequence match the options sequence and urls number cannot exceed options number.
    */
-  images_url?: String[],
+  images_url?: string[],
 }
 
 export interface TierVariation2 {
@@ -32,7 +32,7 @@ export interface TierVariation2 {
   /**
    * SKU string of this variation.SKU length should be under 100.
    */
-  variation_sku: String,
+  variation_sku: string,
 }
 
 export default interface InitTier2Request {

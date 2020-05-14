@@ -9,7 +9,7 @@ export interface Category {
   /**
    * ShopCategory's unique identifier.
    */
-  shop_category_id: Number,
+  shop_category_id: number,
   /**
    * ShopCategory's status. Applicable values: NORMAL, INACTIVE, DELETED.
    */
@@ -17,11 +17,11 @@ export interface Category {
   /**
    * ShopCategory's name.
    */
-  name: String,
+  name: string,
   /**
    * ShopCategory's sort weight.
    */
-  sort_weight: Number,
+  sort_weight: number,
 }
 
 export default interface GetCategoryReponse {
@@ -29,10 +29,10 @@ export default interface GetCategoryReponse {
   /**
    * This is to indicate whether the shop categorys list is more than one page. If this value is true, you may want to continue to check next page to retrieve the rest of shop categorys.
    */
-  more: Boolean,
+  more: boolean,
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
 
 }

@@ -15,11 +15,11 @@ export interface PayOrder {
   /**
    * Shopee's unique identifier for an order.
    */
-  ordersn: String,
+  ordersn: string,
   /**
    * Name of the shop.
    */
-  shop_name: String,
+  shop_name: string,
 }
 
 export interface Transaction {
@@ -38,7 +38,7 @@ export interface Transaction {
   /**
    * The type of transaction.
    */
-  transaction_type: String,
+  transaction_type: string,
   /**
    * The amount of transaction.
    */
@@ -54,15 +54,15 @@ export interface Transaction {
   /**
    * Shopee's unique identifier for an order.
    */
-  ordersn: String,
+  ordersn: string,
   /**
    * The serial number of return.
    */
-  refund_sn: String,
+  refund_sn: string,
   /**
    * The type of withdrawal.
    */
-  withdrawal_type: String,
+  withdrawal_type: string,
   /**
    * This field indicates the transaction fee.
    */
@@ -70,11 +70,11 @@ export interface Transaction {
   /**
    * The detailed description of TOPUP SUCCESS and TOPUP FAILED.
    */
-  description: String,
+  description: string,
   /**
    * The name of buyer.
    */
-  buyer_name: String,
+  buyer_name: string,
   /**
    * List of ordersn included in the transaction.
    */
@@ -82,7 +82,7 @@ export interface Transaction {
   /**
    * Name of the shop.
    */
-  shop_name: String,
+  shop_name: string,
   /**
    * Withdraw ID when transaction type is withdraw_created, withdrawal_completed, withdrawal_cancelled.
    */
@@ -93,6 +93,6 @@ export default interface GetTransactionListResponse {
   /**
    * This is to indicate whether the transaction list is more than one page. If this value is true, you may want to continue to check next page to retrieve orders.
    */
-  has_more: Boolean,
+  has_more: boolean,
   transaction_list: Transaction[]
 }

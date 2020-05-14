@@ -4,7 +4,7 @@ export interface VariationDiscountDetail extends VariationDiscount {
   /**
    * Name of the variation that belongs to the same item.
    */
-  variation_name: String,
+  variation_name: string,
   /**
    * The original price before discount of the variation.
    */
@@ -27,7 +27,7 @@ export interface DiscountDetailItem extends DiscountItem{
   /**
    * Name of the item in local language.
    */
-  item_name: String,
+  item_name: string,
   /**
    * The original price before discount of the item. If there is variation, this value is 0.
    */
@@ -61,7 +61,7 @@ export default interface GetDiscountDetailResponse {
   /**
    * Shopee's unique identifier for a discount activity.
    */
-  discount_name: String,
+  discount_name: string,
   /**
    * The time when discount activity start.
    */
@@ -73,7 +73,7 @@ export default interface GetDiscountDetailResponse {
   /**
    * This is to indicate whether the item list is more than one page. If this value is true, you may want to continue to check next page to retrieve the rest of items.
    */
-  more: Boolean,
+  more: boolean,
   items: DiscountDetailItem[],
   /**
    * The status of discount, applicable values: expired, ongoing, upcoming.
@@ -82,5 +82,5 @@ export default interface GetDiscountDetailResponse {
   /**
    * The identifier of the API request for error tracking.
    */
-  request_id: String,
+  request_id: string,
 }

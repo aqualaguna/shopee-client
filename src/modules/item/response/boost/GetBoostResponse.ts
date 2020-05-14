@@ -14,6 +14,6 @@ export default interface GetBoostResponse {
   /**
    * This is to indicate the timestamp of the request. Required for all requests.
    */
-  request_id: String,
+  request_id: string,
   items: ItemBoost[],
 }

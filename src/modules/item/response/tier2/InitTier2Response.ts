@@ -20,7 +20,7 @@ export default interface InitTier2Response {
   /**
    * The identifier of the API request for error tracking
    */
-  request_id: String,
+  request_id: string,
   /**
    * Current variation ids under this item
    */

@@ -62,7 +62,7 @@ export default class DiscountModule extends BaseModule {
    * Use this api to delete one discount activity BEFORE it starts.
    * @param request 
    */
-  deleteDiscount(discount_id: String): Promise<DeleteDiscountResponse> {
+  deleteDiscount(discount_id: string): Promise<DeleteDiscountResponse> {
     let full_url = this.client.defaults.baseURL + 'discount/delete';
     let params: any = {
       discount_id,

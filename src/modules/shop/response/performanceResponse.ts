@@ -20,11 +20,11 @@ export interface Threshold {
   /**
    * The threshold used to compare shop's actual performance to the target performance. It has four types: lt(less than), gt(greater than), lte(less than or equal), gte(greater than or equal).
    */
-  threshold_type: String, 
+  threshold_type: string, 
   /**
    * Null, not applicable.
    */
-  unit: String,
+  unit: string,
   /**
    * Your target performance index.
    */
@@ -86,5 +86,5 @@ export default interface PerformanceResponse {
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
 }

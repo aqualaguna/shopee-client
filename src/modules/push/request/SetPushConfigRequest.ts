@@ -2,7 +2,7 @@ export default interface SetPushConfigRequest {
    /**
    * The callback url of push mechanism.
    */
-  callback_url: String,
+  callback_url: string,
   detailed_config: {
     /**
      * 0 stands for off and 1 stands for on.

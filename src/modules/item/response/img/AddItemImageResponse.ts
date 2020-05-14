@@ -2,18 +2,18 @@ export default interface AddItemImageResponse {
    /**
    * The identity of product item.
    */
-  item_id: String,
+  item_id: string,
   /**
    * Image URLs for fail download.
    */
-  fail_image: String[],
+  fail_image: string[],
   /**
    * Image URLs for item.
    */
-  images: String[],
+  images: string[],
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
 
 }

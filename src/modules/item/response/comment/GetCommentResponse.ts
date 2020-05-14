@@ -20,15 +20,15 @@ export interface Comment {
   /**
    * Content of the comment.
    */
-  comment: String,
+  comment: string,
   /**
    * Username of the buyer who posted the comment.
    */
-  buyer_username: String,
+  buyer_username: string,
   /**
    * Commented ordersn
    */
-  ordersn: String,
+  ordersn: string,
   /**
    * Commented item's id
    */
@@ -57,7 +57,7 @@ export interface Comment {
     /**
      * The content of reply
      */
-    reply: String,
+    reply: string,
     /**
      * The status of comment, available values: DELETE/NORMAL/VALID/HIDDEN
      */
@@ -69,10 +69,10 @@ export default interface GetCommentResponse {
   /**
    * This is to indicate whether the comment list is more than one page. If this value is true, you may want to continue to check next page to retrieve the rest of comments.
    */
-  more: Boolean,
+  more: boolean,
   item_cmt_list: Comment[],
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String
+  request_id: string
 }

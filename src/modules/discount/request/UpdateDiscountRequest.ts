@@ -6,7 +6,7 @@ export default interface UpdateDiscountRequest {
   /**
    * Title of the discount.
    */
-  discount_name?: String,
+  discount_name?: string,
   /**
    * The time when discount activity start. The new start time must later than original start time. Start time cannot be changed after discount starts.
    */

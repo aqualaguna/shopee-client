@@ -4,10 +4,10 @@ export default interface DeleteDiscountItemResponse extends DeleteDiscountRespon
   /**
    * Shopee's unique identifier for a variation of an item.
    */
-  item_id: Number,
+  item_id: number,
   /**
    * Shopee's unique identifier for a variation of an item.
    */
-  variation_id: Number,
+  variation_id: number,
 
 }

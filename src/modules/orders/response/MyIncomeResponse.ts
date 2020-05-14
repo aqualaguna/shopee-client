@@ -99,7 +99,7 @@ export interface OrderIncome {
   /**
    * The list of voucher code provided by seller.
    */
-  seller_voucher_code: String[],
+  seller_voucher_code: string[],
   /**
    * The adjustable refund amount from Shopee Dispute Resolution Center.
    */
@@ -110,19 +110,19 @@ export default interface MyIncomeResponse {
   /**
    * Shopee's unique identifier for an order.
    */
-  ordersn: String,
+  ordersn: string,
   /**
    * The username of buyer.
    */
-  buyer_user_name: String,
+  buyer_user_name: string,
   /**
    * The list of the serial number of return.
    */
-  returnsn_list: String[],
+  returnsn_list: string[],
   order_income: OrderIncome,
   /**
    * The identifier for an API request for error tracking.
    */
-  request_id: String,
+  request_id: string,
 
 }

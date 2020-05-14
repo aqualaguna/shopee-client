@@ -15,7 +15,7 @@ export interface VariationTierItem {
   /**
    * SKU string of this variation item.
    */
-  variation_sku: String,
+  variation_sku: string,
 }
 
 export default interface AddTierVariationRequest {

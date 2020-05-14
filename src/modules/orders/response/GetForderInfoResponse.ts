@@ -24,7 +24,7 @@ export interface TrackingLog {
   /**
    * The order logistics tracking info.
    */
-  description: String,
+  description: string,
 }
 
 export interface ForderItem {
@@ -54,26 +54,26 @@ export interface LogisticInfo {
   /**
    * The logistics service provider that the buyer selected for the order to deliver items.
    */
-  shipping_carrier: String,
+  shipping_carrier: string,
   /**
    * Only work for cross-border order. This value indicates whether the order contains goods that are required to declare at customs. "T" means true and it will mark as "T" on the shipping label; "F" means false and it will mark as "P" on the shipping label. This value is accurate ONLY AFTER the order trackingNo is generated, please capture this value AFTER your retrieve the trackingNo.
    */
-  goods_to_declare:  Boolean,
+  goods_to_declare:  boolean,
   /**
    * Only work for cross-border order. This code is required at some sorting hub. Please ensure the service_code is INCLUDED on your shipping label, otherwise the parcel cannot be processed by the warehouse. If you didn't retrieve service_code after you first called this API, please try few more times within 30 minutes.
    */
-  service_code: String,
+  service_code: string,
   /**
    * The tracking number of fullfill order assigned by the shipping carrier for item shipment.
    */
-  tracking_no: String,
+  tracking_no: string,
 }
 
 export interface Forder {
   /**
    * The unique identifier for a fulfill order.
    */
-  forder_id: String,
+  forder_id: string,
   /**
    * The fulfill order logistics status. Applicable values: See Data Definition - LogisticsStatus.
    */
@@ -90,14 +90,14 @@ export interface Forder {
   /**
    * The first-mile tracking number.
    */
-  fm_tn: String,
+  fm_tn: string,
 }
 
 export default interface GetForderInfoResponse {
   /**
    * Shopee's unique identifier for an order.
    */
-  order_sn: String,
+  order_sn: string,
   /**
    * The fulfill order list
    */
@@ -105,5 +105,5 @@ export default interface GetForderInfoResponse {
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
 }

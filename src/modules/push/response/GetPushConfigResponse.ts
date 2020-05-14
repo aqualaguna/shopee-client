@@ -2,7 +2,7 @@ export default interface  GetPushConfigResponse {
   /**
    * The callback url of push mechanism.
    */
-  callback_url: String,
+  callback_url: string,
   /**
    * The shutdown time caused by low successful rate of push mechanism.
    */
@@ -40,5 +40,5 @@ export default interface  GetPushConfigResponse {
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
 }

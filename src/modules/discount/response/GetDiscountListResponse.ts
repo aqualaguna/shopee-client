@@ -13,9 +13,9 @@ export default interface GetDiscountListResponse {
   /**
    * This is to indicate whether the item list is more than one page. If this value is true, you may want to continue to check next page to retrieve the rest of items.
    */
-  more: Boolean,
+  more: boolean,
   /**
    * The identifier for an API request for error tracking
    */
-  request_id: String,
+  request_id: string,
 }

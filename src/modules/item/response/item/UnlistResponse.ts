@@ -1,7 +1,7 @@
 import { ItemUnlist } from "../../request/item/UnlistRequest";
 
 export interface FailedItem {
-  item_id: Number,
+  item_id: number,
   error_description: string,
 }
 

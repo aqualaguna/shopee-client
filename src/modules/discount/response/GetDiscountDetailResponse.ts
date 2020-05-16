@@ -8,19 +8,19 @@ export interface VariationDiscountDetail extends VariationDiscount {
   /**
    * The original price before discount of the variation.
    */
-  variation_original_price: Number,
+  variation_original_price: number,
   /**
    * The current stock quantity of the variation.
    */
-  variation_stock: Number,
+  variation_stock: number,
   /**
    * Use this field to indicate the after-tax original price of variation.
    */
-  variation_inflated_original_price: Number,
+  variation_inflated_original_price: number,
   /**
    * Use this field to indicate the after-tax promotion price of variation.
    */
-  variation_inflated_promotion_price: Number,
+  variation_inflated_promotion_price: number,
 }
 
 export interface DiscountDetailItem extends DiscountItem{
@@ -31,19 +31,19 @@ export interface DiscountDetailItem extends DiscountItem{
   /**
    * The original price before discount of the item. If there is variation, this value is 0.
    */
-  item_original_price: Number,
+  item_original_price: number,
   /**
    * The current stock quantity of the item.
    */
-  stock: Number,
+  stock: number,
   /**
    * Use this field to indicate the after-tax original price.
    */
-  item_inflated_original_price: Number,
+  item_inflated_original_price: number,
   /**
    * Use this field to indicate the after-tax promotion price.
    */
-  item_inflated_promotion_price: Number
+  item_inflated_promotion_price: number
 
 }
 
@@ -57,7 +57,7 @@ export default interface GetDiscountDetailResponse {
   /**
    * Shopee's unique identifier for a discount activity.
    */
-  discount_id: Number,
+  discount_id: number,
   /**
    * Shopee's unique identifier for a discount activity.
    */
@@ -65,11 +65,11 @@ export default interface GetDiscountDetailResponse {
   /**
    * The time when discount activity start.
    */
-  start_time: Number,
+  start_time: number,
   /**
    * The time when discount activity end.
    */
-  end_time: Number,
+  end_time: number,
   /**
    * This is to indicate whether the item list is more than one page. If this value is true, you may want to continue to check next page to retrieve the rest of items.
    */

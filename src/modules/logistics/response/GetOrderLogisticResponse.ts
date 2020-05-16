@@ -14,7 +14,7 @@ export interface LogisticOrder {
   /**
    * The identity of logistic channel.
    */
-  logistic_id: Number,
+  logistic_id: number,
   /**
    * Only work for cross-border order. This code is required at some sorting hub. Please ensure the service_code is INCLUDED on your shipping label, otherwise the parcel cannot be processed by the warehouse. If you didn't retrieve service_code after you first called this API, please try few more times within 30 minutes.
    */
@@ -48,7 +48,7 @@ export interface LogisticOrder {
   /**
    * Only work for cross-border order in some special shop. The ID of the warehouse.
    */
-  warehouse_id: Number,
+  warehouse_id: number,
   /**
    * This object contains detailed breakdown for the recipient address.
    */

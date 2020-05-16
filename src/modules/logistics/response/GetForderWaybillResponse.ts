@@ -38,7 +38,7 @@ export default interface GetForderWaybillResponse {
     /**
      * The number of ordersn to get airway bills in this call.
      */
-    total_count: Number,
+    total_count: number,
     /**
      * This Object contains the airway bill to each order.
      */
@@ -55,7 +55,7 @@ export default interface GetForderWaybillResponse {
     /**
      * The number of orderSN to get airway bills in this call.
      */
-    total_count: Number,
+    total_count: number,
     /**
      * This list contains the ordersn of all orders that failed to retrieve airway bill in this call. AirwayBill is no longer fetchable after the order status is updated to SHIPPED.
      */

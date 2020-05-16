@@ -23,7 +23,7 @@ export interface OrderSimple {
   /**
    * Timestamp that indicates the last time that there was a change in value of order, such as order status changed from 'Paid' to 'Completed'.
    */
-  updated_time: Number,
+  updated_time: number,
 }
 
 export default interface GetOrderListResponse {

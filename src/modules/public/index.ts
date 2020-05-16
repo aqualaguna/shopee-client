@@ -11,7 +11,7 @@ export default class PublicModule extends BaseModule {
    * Use this call to get basic info of shops which have authorized to the partner.
    * @param partner_id Partner ID is assigned upon registration is successful. Required for all requests.
    */
-  getShopByPartner(partner_id: Number): Promise<GetShopByPartnerResponse> {
+  getShopByPartner(partner_id: number): Promise<GetShopByPartnerResponse> {
     let full_url = this.client.defaults.baseURL + 'shop/get_partner_shop';
     let params: any = {
       partner_id,
@@ -48,7 +48,7 @@ export default class PublicModule extends BaseModule {
    * @param partner_id Partner ID is assigned upon registration is successful. Required for all requests.
    * @param country ID/MY/SG/VN/PH/TH/TW
    */
-  getPaymentList(partner_id: Number, country?: string): Promise<GetCategoriesByCountryResponse> {
+  getPaymentList(partner_id: number, country?: string): Promise<GetCategoriesByCountryResponse> {
     let full_url = this.client.defaults.baseURL + 'payment/list';
     let params: any = {
       partner_id,

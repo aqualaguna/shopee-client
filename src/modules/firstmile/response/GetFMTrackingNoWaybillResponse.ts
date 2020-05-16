@@ -34,7 +34,7 @@ export default interface GetFMTrackingNoWaybillResponse {
     /**
      * The number of Tracking Number to get waybills in this call.
      */
-    total_count: Number,
+    total_count: number,
     /**
      * This list contains the first-mile tracking number and error descriptions of all tracking numbers that failed to retrieve airway bill in this call.
      */
@@ -51,7 +51,7 @@ export default interface GetFMTrackingNoWaybillResponse {
     /**
      * The number of Tracking Number to get waybills in this call.
      */
-    total_count: Number,
+    total_count: number,
     /**
      * This list contains the first-mile tracking number and error descriptions of all tracking numbers that failed to retrieve airway bill in this call.
      */

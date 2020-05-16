@@ -20,7 +20,7 @@ export interface TrackingLog {
   /**
    * The time when logistics info has been updated.
    */
-  ctime: Number,
+  ctime: number,
   /**
    * The order logistics tracking info.
    */
@@ -31,23 +31,23 @@ export interface ForderItem {
   /**
    * Shopee's unique identifier for an item.
    */
-  item_id: Number,
+  item_id: number,
   /**
    * Shopee's unique identifier for a variation of an item.
    */
-  variation_id: Number,
+  variation_id: number,
   /**
    * The number of identical items/variations purchased at the same time by the same buyer from one listing/item.
    */
-  num: Number,
+  num: number,
   /**
    * The original price of the item in the listing currency.
    */
-  item_price: Number,
+  item_price: number,
   /**
    * The original price of the variation in the listing currency.
    */
-  variation_price: Number,
+  variation_price: number,
 }
 
 export interface LogisticInfo {

@@ -45,7 +45,7 @@ export interface OrderItem {
   /**
    * ID of item
    */
-  item_id: Number,
+  item_id: number,
   /**
    * Name of item
    */
@@ -57,7 +57,7 @@ export interface OrderItem {
   /**
    * ID of the variation that belongs to the same item.
    */
-  variation_id: Number,
+  variation_id: number,
   /**
    * Name of the variation that belongs to the same item.
    * A seller can offer variations of the same item. 
@@ -72,11 +72,11 @@ export interface OrderItem {
   /**
    * The number of identical items purchased at the same time by the same buyer from one listing/item.
    */
-  variation_quantity_purchased: Number,
+  variation_quantity_purchased: number,
   /**
    * The original price of the item in the listing currency.
    */
-  variation_original_price: Number,
+  variation_original_price: number,
   /**
    * The after-discount price of the item in the listing currency.
    * If there is no discount, this value will be same as that of variation_original_price.
@@ -84,7 +84,7 @@ export interface OrderItem {
    * Due to technical restriction, the value will return the price before bundle deal if we don't configure it to 0.
    * Please call GetEscrowDetails if you want to calculate item-level discounted price for bundle deal item.
    */
-  variation_discounted_price: Number,
+  variation_discounted_price: number,
   /**
    * This value indicates whether buyer buy the order item in wholesale price.
    */
@@ -92,7 +92,7 @@ export interface OrderItem {
   /**
    * The weight of the item
    */
-  weight: Number,
+  weight: number,
   /**
    * To indicate if this item belongs to an addon deal.
    */
@@ -104,7 +104,7 @@ export interface OrderItem {
   /**
    * A unique ID to distinguish groups of items in Cart, and Order. (e.g. AddOnDeal)
    */
-  add_on_deal_id: Number,
+  add_on_deal_id: number,
   /**
    * Available type：product_promotion, flash_sale, group_by, bundle_deal.
    */
@@ -112,7 +112,7 @@ export interface OrderItem {
   /**
    * The ID of the promotion.
    */
-  promotion_id: Number,
+  promotion_id: number,
 }
 
 export enum CancelReason {
@@ -146,7 +146,7 @@ export interface Order {
   /**
    * Shipping preparation time set by the seller when listing item on Shopee.
    */
-  days_to_ship: Number,
+  days_to_ship: number,
   /**
    * This object contains detailed breakdown for the recipient address.
    */
@@ -154,19 +154,19 @@ export interface Order {
   /**
    * The estimated shipping fee is an estimation calculated by Shopee based on specific logistics courier's standard.
    */
-  estimated_shipping_fee: Number,
+  estimated_shipping_fee: number,
   /**
    * The actual shipping cost of the order if available from external logistics partners.
    */
-  actual_shipping_cost: Number,
+  actual_shipping_cost: number,
   /**
    * The total amount paid by the buyer for the order. This amount includes the total sale price of items, shipping cost beared by buyer; and offset by Shopee promotions if applicable. This value will only return after the buyer has completed payment for the order.
    */
-  total_amount: Number,
+  total_amount: number,
   /**
    * The total amount that the seller is expected to receive for the order. This amount includes buyer paid order amount (total_amount), all forms of Shopee platform subsidy; and offset by any cost and commission incurred.
    */
-  escrow_amount: Number,
+  escrow_amount: number,
   /**
    * Enumerated type that defines the current status of the order.
    */
@@ -195,15 +195,15 @@ export interface Order {
   /**
    * Update time for the note.
    */
-  note_update_time: Number,
+  note_update_time: number,
   /**
    * Timestamp that indicates the date and time that the order was created.
    */
-  create_time: Number,
+  create_time: number,
   /**
    * Timestamp that indicates the last time that there was a change in value of order, such as order status changed from 'Paid' to 'Completed'.
    */
-  update_time: Number,
+  update_time: number,
   /**
    * This object contains the detailed breakdown for the result of this API call.
    */
@@ -211,7 +211,7 @@ export interface Order {
   /**
    * The time when the order status is updated from UNPAID to PAID. This value is NULL when order is not paid yet.
    */
-  pay_time: Number,
+  pay_time: number,
   /**
    * For Indonesia orders only. The name of the dropshipper.
    */
@@ -231,7 +231,7 @@ export interface Order {
   /**
    * The deadline to ship out the parcel.
    */
-  ship_by_date: Number,
+  ship_by_date: number,
   /**
    * To indicate whether this order is split to fullfil order(forder) level. Call GetForderInfo if it's "true".
    */
@@ -255,7 +255,7 @@ export interface Order {
   /**
    * Cross-border tax imposed by the Indonesian government on sellers.
    */
-  escrow_tax: Number,
+  escrow_tax: number,
 }
 
 

@@ -2,11 +2,11 @@ export default interface SetItemInstallmentResponse {
   /**
    * Shopee's unique identifier for an item.
    */
-  item_id: Number,
+  item_id: number,
   /**
    * List of installments
    */
-  tenures: Number[],
+  tenures: number[],
   /**
    * The identifier for an API request for error tracking
    */

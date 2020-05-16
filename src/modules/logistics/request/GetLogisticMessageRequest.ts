@@ -6,7 +6,7 @@ export default interface GetLogisticMessageRequest {
   /**
    * The tracking number assigned by the shipping carrier for item shipment. If there are more than one tracking number in one order, this param is necessary.
    */
-  tracking_number?: Number,
+  tracking_number?: number,
   /**
    * Shopee's unique identifier for a fulfillment order.
    */

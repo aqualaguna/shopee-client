@@ -12,11 +12,11 @@ export default interface CancelOrderRequest {
   /**
    * ID of item. Required when cancel_reason is OUT_OF_STOCK.
    */
-  item_id?: Number,
+  item_id?: number,
   /**
    * ID of the variation that belongs to the same item.Required when cancel_reason is OUT_OF_STOCK.
    */
-  variation_id? :Number,
+  variation_id? :number,
 
   
 }

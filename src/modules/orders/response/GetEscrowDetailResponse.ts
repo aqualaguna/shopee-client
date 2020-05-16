@@ -8,35 +8,35 @@ export interface Income {
   /**
    * The total amount paid by the buyer for the order. This amount includes the total sale price of items, shipping cost beared by buyer; and offset by Shopee promotions if applicable.
    */
-  total_amount: Number,
+  total_amount: number,
   /**
    * Final value of coins used by seller for the order.
    */
-  coin: Number,
+  coin: number,
   /**
    * Final value of voucher provided by Shopee for the order.
    */
-  voucher: Number,
+  voucher: number,
   /**
    * Final value of voucher provided by Seller for the order.
    */
-  voucher_seller: Number,
+  voucher_seller: number,
   /**
    * Final sum of each item Shopee discount of a specific order. This amount will rebate to seller.
    */
-  seller_rebate: Number,
+  seller_rebate: number,
   /**
    * The final shipping cost of order and it is negative. For Non-integrated logistics channel is 0.
    */
-  actual_shipping_cost: Number,
+  actual_shipping_cost: number,
   /**
    * The platform shipping subsidy to the seller.
    */
-  shipping_fee_rebate: Number,
+  shipping_fee_rebate: number,
   /**
    * The commission fee charged by Shopee platform if applicable.
    */
-  commission_fee: Number,
+  commission_fee: number,
   /**
    * The voucher code or promotion code the buyer used.
    */
@@ -49,40 +49,40 @@ export interface Income {
    * The total amount that the seller is expected to receive for the order and will change before order completed.
    * escrow_amount=total_amount+voucher+credit_card_promotion+seller_rebate+coin-commission_fee-credit_card_transaction_fee-cross_border_tax-service_fee-buyer_shopee_kredit-seller_coin_cash_back+final_shipping_fee-seller_return_refund_amount.
    */
-  escrow_amount: Number,
+  escrow_amount: number,
   /**
    * Amount incurred by Buyer for purchasing items outside of home country. Amount may change after Return Refund.
    */
-  cross_border_tax: Number,
+  cross_border_tax: number,
   /**
    * The amount offset via payment promotion.
    */
-  credit_card_promotion: Number,
+  credit_card_promotion: number,
   /**
    * Include buyer transaction fee and seller transaction fee.
    */
-  credit_card_transaction_fee: Number,
+  credit_card_transaction_fee: number,
   /**
    * Amount charged by Shopee to seller for additional services.
    */
-  service_fee: Number,
+  service_fee: number,
   /**
    * Amount charged by Shopee to Buyer for using ShopeeKredit for the order. Currently only applicable in ID.
    */
-  buyer_shopee_kredit: Number,
+  buyer_shopee_kredit: number,
   /**
    * Value of coins provided by Seller for purchasing with his or her store for the order.
    */
-  seller_coin_cash_back: Number,
+  seller_coin_cash_back: number,
   /**
    * Final adjusted amount that seller has to bear as part of escrow.
    * This amount could be negative or positive.
    */
-  final_shipping_fee: Number,
+  final_shipping_fee: number,
   /**
    * Amount returned to Seller in the event of partial return.
    */
-  seller_return_refund_amount:Number,
+  seller_return_refund_amount:number,
   /**
    * True means incoming won't change any more.
    */
@@ -94,11 +94,11 @@ export interface Income {
   /**
    * The transaction_fee of seller.
    */
-  seller_transaction_fee: Number,
+  seller_transaction_fee: number,
   /**
    * The transaction_fee of buyer.
    */
-  buyer_transaction_fee: Number,
+  buyer_transaction_fee: number,
 
 }
 
@@ -121,7 +121,7 @@ export interface EscrowOrderItem {
   /**
    * ID of item
    */
-  item_id: Number,
+  item_id: number,
   /**
    * Name of item
    */
@@ -133,7 +133,7 @@ export interface EscrowOrderItem {
   /**
    * ID of the variation that belongs to the same item.
    */
-  variation_id: Number,
+  variation_id: number,
   /**
    * Name of the variation that belongs to the same item. A seller can offer variations of the same item. For example, the seller could create a fixed-priced listing for a t-shirt design and offer the shirt in different colors and sizes. In this case, each color and size combination is a separate variation. Each variation can have a different quantity and price.
    */
@@ -145,11 +145,11 @@ export interface EscrowOrderItem {
   /**
    * This value indicates the number of identical items purchased at the same time by the same buyer from one listing/item.
    */
-  quantity_purchased: Number,
+  quantity_purchased: number,
   /**
    * The original price of the item before ANY promotion/discount in the listing currency. It returns the subtotal of that specific item if quantity exceeds 1.
    */
-  original_price:Number,
+  original_price:number,
   /**
    * The after-discount price of the item in the listing currency.
    *  It returns the subtotal of that specific item if quantity exceeds 1.
@@ -158,49 +158,49 @@ export interface EscrowOrderItem {
    * Due to technical restriction, the value will return the price before bundle deal if we don’t configure it to 0.
    * Please use the value under "income_details" and "activity" to calculate the bundle deal discount breakdown on item level
    */
-  discounted_price: Number,
+  discounted_price: number,
   /**
    * The offset of this item when the buyer consumed Shopee Coins upon checkout.
    * In case of bundle deal item, this value will return 0. 
    * Due to technical restriction, this field will return incorrect value under bundle deal case if we don’t configure it to 0.
    * Please use the value under "income_details" and "activity" to calculate the breakdown on item level.
    */
-  discount_from_coin: Number,
+  discount_from_coin: number,
   /**
    * The offset of this item when the buyer use Shopee voucher.
    * In case of bundle deal item, this value will return 0. 
    * Due to technical restriction, this field will return incorrect value under bundle deal case if we don’t configure it to 0.
    * Please use the value under "income_details" and "activity" to calculate the breakdown on item level.
    */
-  discount_from_voucher: Number,
+  discount_from_voucher: number,
   /**
    * The offset of this item when the buyer use seller-specific voucher.
    * In case of bundle deal item, this value will return 0.
    *  Due to technical restriction, this field will return incorrect value under bundle deal case if we don’t configure it to 0.
    * Please use the value under "income_details" and "activity" to calculate the breakdown on item level.
    */
-  discount_from_voucher_seller: Number,
+  discount_from_voucher_seller: number,
   /**
    * Platform subsidy to the seller for this item.
    * In case of bundle deal item, this value will return 0.
    *  Due to technical restriction, this field will return incorrect value under bundle deal case if we don’t configure it to 0.
    * Please use the value under "income_details" and "activity" to calculate the breakdown on item level.
    */
-  seller_rebate: Number,
+  seller_rebate: number,
   /**
    * This value indicates the actual price the buyer pay.
    * In case of bundle deal item, this value will return 0 as by design bundle deal discount will not be breakdown to item/variation level.
    *  Due to technical restriction, the value will return the price before bundle deal if we don't configure it to 0.
    *  Please use the value under "income_details" and "activity" to calculate the bundle deal discount breakdown on item level.
    */
-  deal_price: Number,
+  deal_price: number,
   /**
    * This value indicate the offset via credit card promotion.
    * In case of bundle deal item, this value will return 0.
    *  Due to technical restriction, this field will return incorrect value under bundle deal case if we don’t configure it to 0.
    * Please use the value under "income_details" and "activity" to calculate the breakdown on item level.
    */
-  credit_card_promotion: Number,
+  credit_card_promotion: number,
   /**
    * To indicate if this item belongs to an addon deal.
    */
@@ -212,7 +212,7 @@ export interface EscrowOrderItem {
   /**
    * A unique ID to distinguish groups of items in Cart, and Order. (e.g. AddOnDeal)
    */
-  add_on_deal_id: Number,
+  add_on_deal_id: number,
 
   
 }
@@ -221,19 +221,19 @@ export interface ActivityItem {
   /**
    * ID of item.
    */
-  item_id: Number,
+  item_id: number,
   /**
    * ID of the variation that belongs to the same item.
    */
-  variation_id: Number,
+  variation_id: number,
   /**
    * The number of identical items purchased at the same time by the same buyer from one listing/item.
    */
-  quantity_purchased: Number,
+  quantity_purchased: number,
   /**
    * The price used to participate activity. E.g. itemA original price is $10, promo price is $9, and bundle deal is buy 2 get 20% off equals to $14.4. The original_price value will be $9 in this case.
    */
-  original_price: Number,
+  original_price: number,
 
 }
 
@@ -241,7 +241,7 @@ export interface Activity {
   /**
    * ID of activity.
    */
-  activity_id: Number,
+  activity_id: number,
   /**
    * Type of activity. Currently only one type: bundle_deal
    */
@@ -249,11 +249,11 @@ export interface Activity {
   /**
    * The original TOTAL price of ALL items in one activity(e.g. bundle deal. Define by activity_id) in the listing currency.
    */
-  original_price: Number,
+  original_price: number,
   /**
    * The after-discocunt TOTAL price of ALL items in one activity(e.g. bundle deal. Define by activity_id) in the listing currency.
    */
-  discounted_price: Number,
+  discounted_price: number,
   /**
    * This object contains the items in this activity.
    */
@@ -284,7 +284,7 @@ export interface EscrowOrder {
   /**
    * The exchange rate used by Shopee to convert local_currency to escrow_currency.
    */
-  exchange_rate: string|Number,
+  exchange_rate: string|number,
   /**
    * The payment channel that the seller selected to receive escrow for the order.
    */
@@ -292,7 +292,7 @@ export interface EscrowOrder {
   /**
    * The unique identifier for a payee by the 3rd party payment service provider selected in escrow_channel.
    */
-  payee_id: Number,
+  payee_id: number,
   /**
    * This object contains detailed breakdown for bank account of the seller if selected escorw_channel is Bank Transfer.
    */
@@ -308,7 +308,7 @@ export interface EscrowOrder {
   /**
    * Cross-border tax imposed by the Indonesian government on sellers.
    */
-  escrow_tax: Number,
+  escrow_tax: number,
 }
 
 export default interface GetEscrowDetailResponse {

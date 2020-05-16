@@ -6,15 +6,15 @@ export interface ItemPriceModified {
   /**
    * The time when price of the item is updated.
    */
-  modified_time: Number,
+  modified_time: number,
   /**
    * Specify the revised price of the item.
    */
-  price: Number,
+  price: number,
   /**
    * Specify the revised price of the item.
    */
-  inflated_price: Number
+  inflated_price: number
 
 }
 export default interface UpdatePriceResponse {

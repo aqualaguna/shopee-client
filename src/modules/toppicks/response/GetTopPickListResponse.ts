@@ -4,7 +4,7 @@ export interface TopPickItem {
   /**
    * Item ID
    */
-  item_id: Number,
+  item_id: number,
   /**
    * Item Name
    */
@@ -12,11 +12,11 @@ export interface TopPickItem {
   /**
    * Item discounted price(original price if no discount). Item level price will return if it has variation.
    */
-  item_price: Number,
+  item_price: number,
   /**
    * The sales of the item
    */
-  sales: Number,
+  sales: number,
 
 }
 
@@ -28,7 +28,7 @@ export interface TopPick {
   /**
    * Collection ID
    */
-  top_picks_id: Number,
+  top_picks_id: number,
   /**
    * True or False
    */

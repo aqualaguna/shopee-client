@@ -2,11 +2,11 @@ export default interface UpdateLogisticResponse {
   /**
    * Shopee's unique identifier for a shop.
    */
-  shopid: Number,
+  shopid: number,
   /**
    * The identity of logistic channel
    */
-  logistic_id: Number,
+  logistic_id: number,
   /**
    * Whether this logistic channel is enabled
    */

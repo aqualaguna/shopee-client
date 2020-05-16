@@ -7,7 +7,7 @@ export interface BoostFail {
   /**
    * Failed item id.
    */
-  id: Number,
+  id: number,
   /**
    * error description
    */
@@ -17,7 +17,7 @@ export interface BoostBatchResult {
   /**
    * A list of item ids which have been boosted successfully.
    */
-  successes: Number[],
+  successes: number[],
   /**
    * A list of failed-to-boost items, including error details.
    */

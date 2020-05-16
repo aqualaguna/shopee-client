@@ -28,7 +28,7 @@ export default interface GetFmTnDetailResponse {
   /**
    * The identity of logistic channel
    */
-  logistic_id: Number,
+  logistic_id: number,
   /**
    * The first-mile tracking number.
    */

@@ -4,18 +4,18 @@ export interface SimpleVariationTier {
   /**
    * Unique identifier of the variation.
    */
-  variation_id: Number,
+  variation_id: number,
   /**
    * Unique identifier of the variation.
    */
-  tier_index: Number[],
+  tier_index: number[],
 }
 
 export default interface GetVariationTierResponse {
   /**
    * Shopee's unique identifier for an item.
    */
-  item_id: Number,
+  item_id: number,
   /**
    * Tier_variation list.
    */

@@ -4,7 +4,7 @@ export interface Branch {
   /**
    * The identity of branch.
    */
-  branch_id: Number,
+  branch_id: number,
   /**
    * The country of specify branch.
    */

@@ -2,11 +2,11 @@ export default interface DeleteDiscountResponse {
   /**
    * Shopee's unique identifier for a discount activity.
    */
-  discount_id: Number,
+  discount_id: number,
   /**
    * The time when discount has been deleted.
    */
-  modify_time: Number,
+  modify_time: number,
   /**
    * The identifier for an API request for error tracking
    */

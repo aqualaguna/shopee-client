@@ -86,7 +86,7 @@ export default class ItemModule extends BaseModule {
    * Use this call to delete a product item.
    * @param item_id id of an item.
    */
-  deleteItem(item_id: Number): Promise<DeleteItemResponse> {
+  deleteItem(item_id: number): Promise<DeleteItemResponse> {
     let full_url = this.client.defaults.baseURL + 'item/delete';
     let params: any = {
       partner_id: Number(this.config.partner_id),
@@ -227,7 +227,7 @@ export default class ItemModule extends BaseModule {
    * Use this call to get detail of item
    * @param request 
    */
-  getItemDetail(item_id: Number) : Promise<getItemDetailResponse> {
+  getItemDetail(item_id: number) : Promise<getItemDetailResponse> {
     let full_url = this.client.defaults.baseURL + 'item/get';
     let params: any = {
       partner_id: Number(this.config.partner_id),
@@ -348,7 +348,7 @@ export default class ItemModule extends BaseModule {
    * Use this call to update item price
    * @param request 
    */
-  updatePrice(item_id: Number, price: Number) : Promise<UpdatePriceResponse> {
+  updatePrice(item_id: number, price: number) : Promise<UpdatePriceResponse> {
     let full_url = this.client.defaults.baseURL + 'items/update_price';
     let params: any = {
       item_id,
@@ -369,7 +369,7 @@ export default class ItemModule extends BaseModule {
    * Use this call to update item stock
    * @param request 
    */
-  updateStock(item_id: Number, stock: Number) : Promise<UpdateStockResponse> {
+  updateStock(item_id: number, stock: number) : Promise<UpdateStockResponse> {
     let full_url = this.client.defaults.baseURL + 'items/update_stock';
     let params: any = {
       item_id,
@@ -613,7 +613,7 @@ export default class ItemModule extends BaseModule {
    * Use this api to boost multiple items at once.
    * @param request 
    */
-  boostItem(item_id: Number[] ) : Promise<BoostResponse> {
+  boostItem(item_id: number[] ) : Promise<BoostResponse> {
     let full_url = this.client.defaults.baseURL + 'items/boost';
     let params: any = {
       item_id,

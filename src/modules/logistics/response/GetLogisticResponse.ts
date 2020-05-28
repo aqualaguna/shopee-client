@@ -10,7 +10,7 @@ export interface Size {
   /**
    * The identity of size.
    */
-  size_id: Number,
+  size_id: number,
   /**
    * The name of size.
    */
@@ -18,14 +18,14 @@ export interface Size {
   /**
    * The pre-defined shipping fee for the specific size.
    */
-  default_price: Number,
+  default_price: number,
 }
 
 export interface Logistic {
   /**
    * The identity of logistic channel
    */
-  logistic_id: Number,
+  logistic_id: number,
   /**
    * The name of logistic channel
    */
@@ -53,11 +53,11 @@ export interface Logistic {
     /**
      * The max weight for an item on this logistic channel.If the value is 0 or null, that means there is no limit.
      */
-    item_max_weight: Number,
+    item_max_weight: number,
     /**
      * The min weight for an item on this logistic channel. If the value is 0 or null, that means there is no limit.
      */
-    item_min_weight: Number
+    item_min_weight: number
   },
   /**
    * The dimension limit for this logistic channel.
@@ -66,15 +66,15 @@ export interface Logistic {
     /**
      * The max height limit.
      */
-    height: Number,
+    height: number,
     /**
      * The max length limit.
      */
-    length: Number,
+    length: number,
     /**
      * The max width limit.
      */
-    width: Number,
+    width: number,
     /**
      * The unit for the limit.
      */

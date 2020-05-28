@@ -43,7 +43,7 @@ export interface TrackingInfo {
   /**
    * The time when logistics info has been updated.
    */
-  ctime: Number,
+  ctime: number,
   /**
    * The order logistics tracking info.
    */

@@ -3,7 +3,7 @@ export interface SuccItem {
   /**
    * The identity of comment.
    */
-  cmt_id: Number,
+  cmt_id: number,
 
 }
 
@@ -11,7 +11,7 @@ export interface ReplyError {
   /**
    * The identity of comment.
    */
-  cmt_id: Number,
+  cmt_id: number,
   /**
    * Error message description.
    */

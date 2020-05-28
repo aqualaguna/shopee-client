@@ -27,27 +27,27 @@ export default interface FirstMileCodeBindOrderRequest {
   /**
    * The identity of first-mile logistic channel
    */
-  logistic_id: Number,
+  logistic_id: number,
   /**
    * The volume of the parcel.
    */
-  volume?: Number,
+  volume?: number,
   /**
    * The weight of the parcel.
    */
-  weight?: Number,
+  weight?: number,
   /**
    * The width of the parcel.
    */
-  width?: Number,
+  width?: number,
   /**
    * The length of the parcel.
    */
-  length?: Number,
+  length?: number,
   /**
    * The height of the parcel.
    */
-  height?: Number,
+  height?: number,
   /**
    * Use this field to specify the region you want to ship parcel.
    * sample: cn

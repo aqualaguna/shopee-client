@@ -2,7 +2,7 @@ export default interface DeleteItemResponse {
   /**
    * Shopee's unique identifier for an item.
    */
-  item_id: Number,
+  item_id: number,
   /**
    * message from server
    */

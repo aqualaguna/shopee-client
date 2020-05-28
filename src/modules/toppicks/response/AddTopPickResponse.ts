@@ -4,7 +4,7 @@ export default interface AddTopPickResponse {
   /**
    * Collection id
    */
-  top_picks_id: Number,
+  top_picks_id: number,
   /**
    * Whether it is activated or not.
    */

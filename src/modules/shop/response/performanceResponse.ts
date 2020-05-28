@@ -28,11 +28,11 @@ export interface Threshold {
   /**
    * Your target performance index.
    */
-  target: Number,
+  target: number,
   /**
    * Your actual performance index.
    */
-  my: Number
+  my: number
 }
 export default interface PerformanceResponse {
   /**

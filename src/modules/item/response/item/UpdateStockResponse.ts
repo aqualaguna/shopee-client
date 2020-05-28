@@ -3,15 +3,15 @@ export interface ItemStockModified {
   /**
    * Shopee's unique identifier for an item.
    */
-  item_id: Number,
+  item_id: number,
   /**
    * The time when stock of the item is updated.
    */
-  modified_time: Number,
+  modified_time: number,
   /**
    * Specify the updated stock quantity.
    */
-  stock: Number,
+  stock: number,
 
 }
 

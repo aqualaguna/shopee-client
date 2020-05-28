@@ -16,7 +16,7 @@ export interface Comment {
   /**
    * The identity of comment.
    */
-  cmt_id: Number,
+  cmt_id: number,
   /**
    * Content of the comment.
    */
@@ -32,15 +32,15 @@ export interface Comment {
   /**
    * Commented item's id
    */
-  item_id: Number,
+  item_id: number,
   /**
    * Shopee's unique identifier for a variation of an item.
    */
-  variation_id: Number,
+  variation_id: number,
   /**
    * The create time of the comment
    */
-  create_time: Number,
+  create_time: number,
   /**
    * The status of comment, available values: DELETE/NORMAL/VALID/HIDDEN
    */
@@ -48,7 +48,7 @@ export interface Comment {
   /**
    * Buyer's rating for the item
    */
-  rating_star: Number,
+  rating_star: number,
   /**
    * The edit status of comment, available values: EXPIRED/EDITABLE/HAVE_EDIT_ONCE
    */

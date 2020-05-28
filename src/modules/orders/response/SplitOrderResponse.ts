@@ -3,7 +3,7 @@ export interface simpleitem {
   /**
    * Shopee's unique identifier for an item.
    */
-  item_id: Number,
+  item_id: number,
 }
 export interface SplitItem {
   /**

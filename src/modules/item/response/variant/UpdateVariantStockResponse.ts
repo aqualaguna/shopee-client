@@ -4,7 +4,7 @@ export interface UpdateVariantStockItem extends ItemStockModified {
   /**
    * Shopee's unique identifier for a variation of an item.
    */
-  variation_id: Number,
+  variation_id: number,
 }
 
 export default interface UpdateVariantStockResponse {

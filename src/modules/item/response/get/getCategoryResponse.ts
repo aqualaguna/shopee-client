@@ -3,21 +3,21 @@ export interface DayShip {
   /**
    * The maximum of dts，-1 means no dts.
    */
-  max_limit: Number,
+  max_limit: number,
   /**
    * The minimum of dts，-1 means no dts.
    */
-  min_limit: Number,
+  min_limit: number,
 }
 export interface CategoryItem {
   /**
    * The Identify of each category
    */
-  category_id: Number,
+  category_id: number,
   /**
    * The Identify of the parent of the category
    */
-  parent_id: Number,
+  parent_id: number,
   /**
    * The name of each category
    */

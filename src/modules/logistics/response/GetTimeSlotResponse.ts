@@ -7,7 +7,7 @@ export interface Pickup {
   /**
    * The date of pickup time. In timestamp.
    */
-  date: Number,
+  date: number,
   /**
    * The text description of pickup time. Only applicable for certain channels.
    */

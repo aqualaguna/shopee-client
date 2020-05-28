@@ -62,7 +62,7 @@ export default class LogisticModule extends BaseModule {
    * @param ordersn The order serial numbers.
    * @param address_id The identify of address.
    */
-  getTimeSlot(ordersn: Number, address_id: Number): Promise<GetAddressResponse> {
+  getTimeSlot(ordersn: number, address_id: number): Promise<GetAddressResponse> {
     let full_url = this.client.defaults.baseURL + 'logistics/timeslot/get';
     let params: any = {
       ordersn,
@@ -83,7 +83,7 @@ export default class LogisticModule extends BaseModule {
    * For integrated logistics channel, use this call to get dropoff location for dropoff mode order.
    * @param ordersn The order serial numbers.
    */
-  getBranch(ordersn: Number): Promise<GetBranchResponse> {
+  getBranch(ordersn: number): Promise<GetBranchResponse> {
     let full_url = this.client.defaults.baseURL + 'logistics/branch/get';
     let params: any = {
       ordersn,
@@ -106,7 +106,7 @@ export default class LogisticModule extends BaseModule {
    * This API is an alternative of GetParameterForInit, GetAddresss, GetTimeSlot and GetBranch as a set.
    * @param ordersn The order serial numbers.
    */
-  getLogisticInfo(ordersn: Number): Promise<GetLogisticInfoResponse> {
+  getLogisticInfo(ordersn: number): Promise<GetLogisticInfoResponse> {
     let full_url = this.client.defaults.baseURL + 'logistics/init_info/get';
     let params: any = {
       ordersn,
@@ -228,7 +228,7 @@ export default class LogisticModule extends BaseModule {
    * Use this API to delete the address of shop by address_id.
    * @param address_id The identity of address
    */
-  deleteAddress(address_id: Number): Promise<SetAddressResponse> {
+  deleteAddress(address_id: number): Promise<SetAddressResponse> {
     let full_url = this.client.defaults.baseURL + 'logistics/address/delete';
     let params: any = {
       address_id,
@@ -249,7 +249,7 @@ export default class LogisticModule extends BaseModule {
    * Dedicated for crossborder SLS order airwaybill. May not be applicable for local channel airwaybill.
    * @param ordersn  The order serial numbers.
    */
-  getOrderLogistic(ordersn: Number, forder_id?: string): Promise<GetOrderLogisticResponse> {
+  getOrderLogistic(ordersn: number, forder_id?: string): Promise<GetOrderLogisticResponse> {
     let full_url = this.client.defaults.baseURL + 'logistics/order/get';
     let params: any = {
       ordersn,
@@ -275,7 +275,7 @@ export default class LogisticModule extends BaseModule {
    * @param prefered Whether to make this logistic channel preferred. Indonestia logistics channel are not applicable.
    * @param cod Whether to enable COD for this logistic channel. Only COD supported channels are applicable.
    */
-  updateShopLogistic(logistic_id: Number, enabled?: boolean, prefered?: boolean, cod?: boolean): Promise<UpdateLogisticResponse> {
+  updateShopLogistic(logistic_id: number, enabled?: boolean, prefered?: boolean, cod?: boolean): Promise<UpdateLogisticResponse> {
     let full_url = this.client.defaults.baseURL + 'logistics/channel/update';
     let params: any = {
       partner_id: Number(this.config.partner_id),
@@ -305,7 +305,7 @@ export default class LogisticModule extends BaseModule {
    * Use this call to get all required param for logistic initiation.
    * @param ordersn The identity of order
    */
-  getParameterInit(ordersn: Number): Promise<getParameterInitResponse> {
+  getParameterInit(ordersn: number): Promise<getParameterInitResponse> {
     let full_url = this.client.defaults.baseURL + 'logistics/init_parameter/get';
     let params: any = {
       partner_id: Number(this.config.partner_id),

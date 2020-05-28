@@ -3,7 +3,7 @@ export interface ReplyItem {
   /**
    * The identity of comment.
    */
-  cmt_id: Number,
+  cmt_id: number,
   /**
    * Content of the comment.
    */

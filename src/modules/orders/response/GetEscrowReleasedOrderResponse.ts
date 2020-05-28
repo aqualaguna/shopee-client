@@ -7,11 +7,11 @@ export interface OrderReleaseItem {
   /**
    * Order's escrow amount.
    */
-  payout_amount: Number,
+  payout_amount: number,
   /**
    * Timestamp of escrow amount transaction finished.
    */
-  escrow_release_time: Number,
+  escrow_release_time: number,
 }
 
 export default interface GetEscrowReleasedOrderResponse {

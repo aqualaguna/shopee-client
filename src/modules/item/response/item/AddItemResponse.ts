@@ -4,7 +4,7 @@ export interface Item {
   /**
    * Shopee's unique identifier for a shop.
    */
-  shopid: Number,
+  shopid: number,
   /**
    * An item SKU (stock keeping unit) is an identifier defined by a seller, sometimes called parent SKU. Item SKU can be assigned to an item in Shopee Listings.
    */
@@ -36,19 +36,19 @@ export interface Item {
   /**
    * The current price of the item in the listing currency.If item is in promotion, this value is discount price.
    */
-  price: Number,
+  price: number,
   /**
    * The current stock quantity of the item.
    */
-  stock: Number,
+  stock: number,
   /**
    * Timestamp that indicates the date and time that the item was created.
    */
-  create_time: Number,
+  create_time: number,
   /**
    * Timestamp that indicates the date and time that the item was created.
    */
-  update_time: Number,
+  update_time: number,
 
 
   /**
@@ -75,31 +75,31 @@ export interface Item {
   /**
    * the net weight of this item, the unit is KG.
    */
-  weight: Number,
+  weight: number,
   /**
    * The length of package for this single item, the unit is CM
    */
-  package_length: Number,
+  package_length: number,
   /**
    * The width of package for this single item, the unit is CM
    */
-  package_width: Number,
+  package_width: number,
   /**
    * The height of package for this single item, the unit is CM
    */
-  package_height: Number,
+  package_height: number,
   /**
    * The guaranteed days to ship orders. For pre-order, please input value from 7 to 30; for non pre-order, please exclude this field and it will default to the respective standard value per your shop location.(e.g. 3 for CrossBorder)
    */
-  days_to_ship?: Number,
+  days_to_ship?: number,
   /**
    * Could call shopee.item.GetCategories to get category detail.Related to result.categories.category_id
    */
-  category_id: Number,
+  category_id: number,
   /**
    * The original price of the item in the listing currency.
    */
-  original_price: Number,
+  original_price: number,
   /**
    * The variation list of item
    */
@@ -107,27 +107,27 @@ export interface Item {
   /**
    * The sales volume of item.
    */
-  sales: Number,
+  sales: number,
   /**
    * The page view of item.
    */
-  views: Number,
+  views: number,
   /**
    * The conllection number of item.
    */
-  likes: Number,
+  likes: number,
   /**
    * The rating star scores of this item.
    */
-  rating_star: Number,
+  rating_star: number,
   /**
    * Count of comments for the item.
    */
-  cmt_count: Number,
+  cmt_count: number,
   /**
    * The ID of discount activity the item is currently in. One item can only have one discount at a time. discount_id will be 0 if the item has no discount applied, or item has variation.
    */
-  discount_id: Number,
+  discount_id: number,
   /**
    * Use this field to identify whether the item is pre-order. Applicable value: true/false.
    */
@@ -138,7 +138,7 @@ export interface Variant {
   /**
    * Shopee's unique identifier for a variation of an item.
    */
-  variation_id: Number,
+  variation_id: number,
   /**
    * A variation SKU (stock keeping unit) is an identifier defined by a seller. It is only intended for the seller's use. Many sellers assign a SKU to an item of a specific type, size, and color, which are variations of one item in Shopee Listings.
    */
@@ -150,11 +150,11 @@ export interface Variant {
   /**
    * The current price of the variation in the listing currency.If item is in promotion, this value is discount price.
    */
-  price: Number,
+  price: number,
   /**
    * The current stock quantity of the variation in the listing currency.
    */
-  stock: Number,
+  stock: number,
   /**
    * Enumerated type that defines the current status of the variation. Applicable values: MODEL_NORMAL and MODEL_DELETED.
    */
@@ -162,19 +162,19 @@ export interface Variant {
   /**
    * Timestamp that indicates the date and time that the variation was created.
    */
-  create_time: Number,
+  create_time: number,
   /**
    * Timestamp that indicates the last time that there was a change in value of the variation, such as price/stock change.
    */
-  update_time: Number,
+  update_time: number,
   /**
    * The original price of the variation in the listing currency.
    */
-  original_price: Number,
+  original_price: number,
   /**
    * The ID of discount activity the variation is currently in. One variation can only have one discount at a time. discount_id will be 0 if the variation has no discount applied.
    */
-  discount_id: Number,
+  discount_id: number,
 }
 export enum VariantStatus {
   MODEL_DELETED = 'MODEL_DELETED',
@@ -185,7 +185,7 @@ export default interface AddItemResponse {
   /**
    * unique identifier for item
    */
-  item_id: Number,
+  item_id: number,
   /**
    * Item's info.
    */

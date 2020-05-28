@@ -2,11 +2,11 @@ export default interface InsertItemImgResponse {
   /**
    * item unique identifier
    */
-  item_id: Number,
+  item_id: number,
   /**
    * when modified
    */
-  modified_time: Number,
+  modified_time: number,
   /**
    * list of images.
    */

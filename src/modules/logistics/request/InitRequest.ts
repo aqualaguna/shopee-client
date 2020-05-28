@@ -10,7 +10,7 @@ export default interface InitRequest {
     /**
      * The identity of address. Retrieved from shopee.logistics.GetAddress.
      */
-    address_id?: Number,
+    address_id?: number,
     /**
      * The pickup time id. Retrieved from shopee.logistics.GetTimeSlot.
      */
@@ -28,7 +28,7 @@ export default interface InitRequest {
     /**
      * The identity of branch. Retrieved from shopee.logistics.GetBranch branch.
      */
-    branch_id?: Number,
+    branch_id?: number,
     /**
      * The real name of sender.
      */

@@ -8,6 +8,6 @@ export default interface deleteVariantResponse  extends deleteVariantRequest {
   /**
    * The time when stock of the variation is updated.
    */
-  modified_time: Number,
+  modified_time: number,
 
 }

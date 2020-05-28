@@ -7,7 +7,7 @@ export default interface GenerateFMTrackingNoRequest {
   /**
    * The number of first-mile tracking numbers generated.
    */
-  quantity: Number,
+  quantity: number,
   /**
    * This object contains detailed breakdown for the seller address.
    */

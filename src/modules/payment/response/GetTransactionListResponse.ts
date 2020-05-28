@@ -26,7 +26,7 @@ export interface Transaction {
   /**
    * The ID of transaction.
    */
-  transaction_id: Number,
+  transaction_id: number,
   /**
    * The status of the transaction，available values: FAILED,COMPLETED,PENDING,INITIAL.
    */
@@ -42,15 +42,15 @@ export interface Transaction {
   /**
    * The amount of transaction.
    */
-  amount: Number,
+  amount: number,
   /**
    * The current balance of this account.
    */
-  current_balance: Number,
+  current_balance: number,
   /**
    * The create time of the transaction.
    */
-  create_time: Number,
+  create_time: number,
   /**
    * Shopee's unique identifier for an order.
    */
@@ -66,7 +66,7 @@ export interface Transaction {
   /**
    * This field indicates the transaction fee.
    */
-  transaction_fee: Number,
+  transaction_fee: number,
   /**
    * The detailed description of TOPUP SUCCESS and TOPUP FAILED.
    */
@@ -86,7 +86,7 @@ export interface Transaction {
   /**
    * Withdraw ID when transaction type is withdraw_created, withdrawal_completed, withdrawal_cancelled.
    */
-  withdraw_id: Number,
+  withdraw_id: number,
 }
 
 export default interface GetTransactionListResponse {

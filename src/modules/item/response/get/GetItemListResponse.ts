@@ -14,15 +14,15 @@ export interface GetListItem {
   /**
    * Shopee's unique identifier for an item.
    */
-  item_id: Number,
+  item_id: number,
   /**
    * Shopee's unique identifier for a shop.
    */
-  shopid: Number,
+  shopid: number,
   /**
    * The latest update time of the item.
    */
-  updated_time: Number,
+  updated_time: number,
   /**
    * Enumerated type that defines the current status of the item. Applicable values: NORMAL, BANNED and UNLIST.
    */
@@ -42,7 +42,7 @@ export interface GetListItem {
   /**
    * Only for TW seller. List of installments
    */
-  tenures: Number[],
+  tenures: number[],
 
 }
 export default interface GetItemListReponse {
@@ -58,5 +58,5 @@ export default interface GetItemListReponse {
   /**
    * total count of items.
    */
-  total: Number,
+  total: number,
 }

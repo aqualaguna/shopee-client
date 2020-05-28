@@ -3,11 +3,11 @@ export interface VariationId {
   /**
    * A list of tier variation indexes, which indicate variation's options in tier_variation['options'] list.
    */
-  tier_index: Number[],
+  tier_index: number[],
   /**
    * The identity of the variation.
    */
-  variation_id: Number,
+  variation_id: number,
 
 
 }
@@ -16,7 +16,7 @@ export default interface InitTier2Response {
   /**
    * The identity of product item.
    */
-  item_id: Number,
+  item_id: number,
   /**
    * The identifier of the API request for error tracking
    */

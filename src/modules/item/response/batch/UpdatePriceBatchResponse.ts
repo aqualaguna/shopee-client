@@ -4,7 +4,7 @@ export interface Failure {
   /**
    * The identifier for an API request for error tracking
    */
-  item_id: Number,
+  item_id: number,
   /**
    * The identifier for an API request for error tracking
    */

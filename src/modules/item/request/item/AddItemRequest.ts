@@ -9,7 +9,7 @@ export interface Attribute {
   /**
    * related to shopee.item.GetAttributes result.attributes.attribute_id
    */
-  attributes_id: Number,
+  attributes_id: number,
   /**
    * related to shopee.item.GetAttributes one of result.attributes.options. Max length is 40 letters.
    */
@@ -20,7 +20,7 @@ export interface Logistic {
   /**
    * related to shopee.logistics.GetLogistics result.logistics.logistic_id
    */
-  logistic_id: Number,
+  logistic_id: number,
   /**
    * related to shopee.logistics.GetLogistics result.logistics.enabled only affect current item
    */
@@ -28,11 +28,11 @@ export interface Logistic {
   /**
    * Only needed when logistics fee_type = CUSTOM_PRICE.
    */
-  shipping_fee?: Number,
+  shipping_fee?: number,
   /**
    * If specify logistic fee_type is SIZE_SELECTION size_id is required
    */
-  size_id?: Number,
+  size_id?: number,
   /**
    * when seller chooses this option, the shipping fee of this channel on item will be set to 0. Default value is False.
    */
@@ -43,22 +43,22 @@ export interface Wholesale {
   /**
    * The min count of this tier wholesale. If the wholesale is not the first one, the min count must equal to max count of last tier plus one.
    */
-  min: Number, 
+  min: number, 
   /**
    * The max count of this tier wholesale.
    */
-  max: Number,
+  max: number,
   /**
    * The current price of the wholesale in the listing currency. The price must be cheaper than original price. And if the wholesale is not the first one, the price must be cheaper than previous tier.
    */
-  unit_price: Number,
+  unit_price: number,
 }
 
 export default interface AddItemRequest {
   /**
    * Should call shopee.item.GetCategories to get category first.Related to result.categories.category_id
    */
-  category_id: Number,
+  category_id: number,
   /**
    * Name of the item in local language.
    */
@@ -70,11 +70,11 @@ export default interface AddItemRequest {
   /**
    * The current price of the item in the listing currency. This value will be ignored if there is variation level price input.
    */
-  price: Number,
+  price: number,
   /**
    * The current stock quantity of the item. This value will be ignored if there is variation level stock input.
    */
-  stock: Number,
+  stock: number,
   /**
    * An item SKU (stock keeping unit) is an identifier defined by a seller, sometimes called parent SKU. Item SKU can be assigned to an item in Shopee Listings.
    */
@@ -95,23 +95,23 @@ export default interface AddItemRequest {
   /**
    * the net weight of this item, the unit is KG.
    */
-  weight: Number,
+  weight: number,
   /**
    * The length of package for this single item, the unit is CM
    */
-  package_length: Number,
+  package_length: number,
   /**
    * The width of package for this single item, the unit is CM
    */
-  package_width: Number,
+  package_width: number,
   /**
    * The height of package for this single item, the unit is CM
    */
-  package_height: Number,
+  package_height: number,
   /**
    * The guaranteed days to ship orders. For pre-order, please input value from 7 to 30; for non pre-order, please exclude this field and it will default to the respective standard value per your shop location.(e.g. 3 for CrossBorder)
    */
-  days_to_ship?: Number,
+  days_to_ship?: number,
 
   /**
    * The wholesales tier list. Please put the wholesale tier info in order by min count.

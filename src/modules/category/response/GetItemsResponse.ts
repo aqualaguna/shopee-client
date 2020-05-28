@@ -2,7 +2,7 @@ export interface ItemId {
     /**
      * Shopee's unique identifier for an item.
      */
-    item_id: string
+    item_id: number
 }
 export default interface GetItemsResponse {
   items: ItemId[],

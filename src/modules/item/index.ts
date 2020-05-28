@@ -553,7 +553,7 @@ export default class ItemModule extends BaseModule {
    * Use this call to get tier-variation basic information under an item
    * @param item_id unique identifier id.
    */
-  getTierVariation(item_id: string ) : Promise<GetVariationTierResponse> {
+  getTierVariation(item_id: number) : Promise<GetVariationTierResponse> {
     let full_url = this.client.defaults.baseURL + 'item/tier_var/get';
     let params: any = {
       item_id,

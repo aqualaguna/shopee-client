@@ -4,7 +4,7 @@ export default interface updateItemResponse {
   /**
    * unique identifier for item.
    */
-  item_id: string,
+  item_id: number,
   /**
    * item modified
    */

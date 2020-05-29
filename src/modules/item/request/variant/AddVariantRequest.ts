@@ -22,7 +22,7 @@ export default interface AddVariantRequest {
   /**
    * Shopee's unique identifier for an item. Please input the item_id of an item to be changed.
    */
-  item_id: string,
+  item_id: number,
   /**
    * The variation of item is to list out all models of this product. For example, iPhone has model of White and Black, then its variations includes "White iPhone" and "Black iPhone".
    */

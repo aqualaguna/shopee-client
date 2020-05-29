@@ -2,7 +2,7 @@ export default interface AddItemImageResponse {
    /**
    * The identity of product item.
    */
-  item_id: string,
+  item_id: number,
   /**
    * Image URLs for fail download.
    */
